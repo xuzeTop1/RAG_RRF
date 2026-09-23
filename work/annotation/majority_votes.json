@@ -1,0 +1,10366 @@
+{
+ "q001": {
+  "question:qs-00307": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00121": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "knowledge_node:kn-00386": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00315": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00314": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00119": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q002": {
+  "question:qs-00239": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00220": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00031": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00528": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00067": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00039": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  }
+ },
+ "q003": {
+  "question:qs-00008": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00075": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00033": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 4
+  },
+  "private_chunk:pc-00103": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00014": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "question:qs-00009": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00016": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q004": {
+  "knowledge_node:kn-00464": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00054": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "private_chunk:pc-00059": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00053": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00057": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00052": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00058": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "question:qs-00357": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00060": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q005": {
+  "private_chunk:pc-00152": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00481": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00180": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00477": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00153": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00176": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00138": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q006": {
+  "knowledge_node:kn-00156": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00155": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 3
+  },
+  "question:qs-00133": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00158": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00157": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 3
+  }
+ },
+ "q007": {
+  "knowledge_node:kn-00138": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00123": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00137": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00136": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00135": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  }
+ },
+ "q008": {
+  "private_chunk:pc-00088": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00085": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00050": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00085": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00065": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00103": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00356": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00141": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00091": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q009": {
+  "knowledge_node:kn-00462": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00055": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00460": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00391": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00275": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00068": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q010": {
+  "question:qs-00054": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00159": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00075": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00263": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00503": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00062": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00076": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q011": {
+  "question:qs-00334": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 4
+  },
+  "private_chunk:pc-00105": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00128": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00420": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00125": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00052": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00427": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 4
+  },
+  "private_chunk:pc-00024": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00332": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00244": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q012": {
+  "knowledge_node:kn-00463": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00054": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00358": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00348": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00466": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00055": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q013": {
+  "private_chunk:pc-00010": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00310": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00012": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00009": {
+   "votes": [
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00309": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 4
+  },
+  "private_chunk:pc-00011": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00016": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q014": {
+  "private_chunk:pc-00094": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00048": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00071": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "question:qs-00042": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00049": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00051": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00093": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q015": {
+  "knowledge_node:kn-00345": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00002": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 3
+  },
+  "private_chunk:pc-00021": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00127": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00024": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00346": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00344": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00012": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00260": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00019": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q016": {
+  "knowledge_node:kn-00235": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00234": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 4
+  },
+  "knowledge_node:kn-00233": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00188": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "question:qs-00193": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q017": {
+  "knowledge_node:kn-00089": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00004": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00086": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00032": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00107": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00021": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00020": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q018": {
+  "private_chunk:pc-00079": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00068": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00077": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00081": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00019": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00149": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00080": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00018": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q019": {
+  "knowledge_node:kn-00056": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "knowledge_node:kn-00057": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "knowledge_node:kn-00306": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00307": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00054": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00010": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00014": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q020": {
+  "private_chunk:pc-00096": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00117": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00125": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00107": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00091": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00132": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00122": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  }
+ },
+ "q021": {
+  "knowledge_node:kn-00151": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00146": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00122": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00160": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 4
+  },
+  "knowledge_node:kn-00153": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q022": {
+  "knowledge_node:kn-00289": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "knowledge_node:kn-00526": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "question:qs-00229": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00287": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00517": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 3
+  }
+ },
+ "q023": {
+  "private_chunk:pc-00002": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00354": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00495": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00018": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 4
+  },
+  "knowledge_node:kn-00311": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 4
+  },
+  "private_chunk:pc-00079": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00048": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00032": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q024": {
+  "private_chunk:pc-00087": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00383": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00107": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00018": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00017": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00016": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "question:qs-00388": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q025": {
+  "knowledge_node:kn-00320": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00321": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 3
+  },
+  "question:qs-00259": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00104": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00002": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00323": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00322": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q026": {
+  "private_chunk:pc-00082": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00100": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00118": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00134": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00103": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00046": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00114": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q027": {
+  "question:qs-00339": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00443": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00444": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00446": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00441": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  }
+ },
+ "q028": {
+  "question:qs-00321": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00144": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00280": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "private_chunk:pc-00143": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00316": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00377": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 4
+  },
+  "knowledge_node:kn-00395": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q029": {
+  "question:qs-00336": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00049": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00436": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00435": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00165": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00374": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q030": {
+  "knowledge_node:kn-00534": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00543": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00404": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00544": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00403": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q031": {
+  "question:qs-00185": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00231": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "private_chunk:pc-00068": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00230": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00229": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 4
+  },
+  "knowledge_node:kn-00232": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  }
+ },
+ "q032": {
+  "private_chunk:pc-00083": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00012": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00133": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00073": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00067": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00065": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00116": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q033": {
+  "private_chunk:pc-00136": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00290": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00283": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "knowledge_node:kn-00033": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00154": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00284": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00285": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00374": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00151": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q034": {
+  "knowledge_node:kn-00381": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00130": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00088": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00116": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00384": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00385": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00432": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00376": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00335": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q035": {
+  "knowledge_node:kn-00363": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "private_chunk:pc-00001": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00338": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 3
+  },
+  "private_chunk:pc-00002": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00256": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00348": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00261": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q036": {
+  "knowledge_node:kn-00270": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00269": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00403": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00031": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00288": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 4
+  },
+  "knowledge_node:kn-00266": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00068": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00543": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00544": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00210": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  }
+ },
+ "q037": {
+  "question:qs-00130": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00129": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00291": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00370": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00521": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00068": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00162": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q038": {
+  "knowledge_node:kn-00017": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00052": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00050": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00068": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 4
+  },
+  "private_chunk:pc-00046": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00049": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00018": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00060": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  }
+ },
+ "q039": {
+  "knowledge_node:kn-00206": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00213": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00170": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00204": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00214": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q040": {
+  "knowledge_node:kn-00383": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00142": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 3
+  },
+  "question:qs-00300": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00139": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00379": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 4
+  },
+  "question:qs-00299": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00380": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00129": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q041": {
+  "knowledge_node:kn-00078": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00070": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00047": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00405": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00100": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00101": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 3
+  },
+  "private_chunk:pc-00048": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00121": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q042": {
+  "knowledge_node:kn-00075": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00103": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00099": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00063": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00134": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00055": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00066": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00464": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q043": {
+  "private_chunk:pc-00010": {
+   "votes": [
+    1,
+    1,
+    0,
+    0,
+    1
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00308": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00002": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00001": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00016": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00338": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00333": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00018": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00011": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  }
+ },
+ "q044": {
+  "private_chunk:pc-00039": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00407": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00408": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00076": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00330": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00124": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00038": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00400": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00404": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q045": {
+  "private_chunk:pc-00102": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00099": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00084": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00085": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00064": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00075": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00072": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00103": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q046": {
+  "question:qs-00359": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    1
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "question:qs-00366": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00469": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 4
+  },
+  "private_chunk:pc-00068": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00028": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00471": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00081": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00149": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00360": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00013": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q047": {
+  "private_chunk:pc-00015": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00512": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00088": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00384": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00086": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00101": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 3
+  },
+  "private_chunk:pc-00046": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00048": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00094": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q048": {
+  "private_chunk:pc-00086": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00043": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00052": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00077": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00010": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00085": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00042": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00083": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00043": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 5
+  }
+ },
+ "q049": {
+  "knowledge_node:kn-00106": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00103": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00091": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "knowledge_node:kn-00113": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00128": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00115": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00097": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00121": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00104": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  }
+ },
+ "q050": {
+  "question:qs-00102": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "knowledge_node:kn-00489": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00106": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00129": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00100": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00099": {
+   "votes": [
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00113": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00106": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00092": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q051": {
+  "private_chunk:pc-00065": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 3
+  },
+  "private_chunk:pc-00007": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00069": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00456": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00342": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00064": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00063": {
+   "votes": [
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00363": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q052": {
+  "question:qs-00199": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00198": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00048": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00532": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00083": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00011": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00150": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00523": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00241": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  }
+ },
+ "q053": {
+  "private_chunk:pc-00082": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00086": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00082": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00081": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "question:qs-00070": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00093": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00078": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00084": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  }
+ },
+ "q054": {
+  "private_chunk:pc-00016": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00202": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00083": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00278": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00017": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00541": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00003": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00089": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00380": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00094": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q055": {
+  "private_chunk:pc-00016": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00358": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00242": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00341": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00316": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "private_chunk:pc-00037": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "question:qs-00238": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00123": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00082": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q056": {
+  "knowledge_node:kn-00453": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00342": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00343": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00454": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00449": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00450": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 3
+  }
+ },
+ "q057": {
+  "question:qs-00257": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00058": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00128": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00072": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00303": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00006": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00317": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00324": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "private_chunk:pc-00010": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q058": {
+  "knowledge_node:kn-00465": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00063": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00457": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00352": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00499": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00084": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00095": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00085": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00064": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00043": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q059": {
+  "private_chunk:pc-00081": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00400": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00028": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00068": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00230": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00087": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q060": {
+  "knowledge_node:kn-00468": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00142": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 3
+  },
+  "knowledge_node:kn-00410": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00168": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00197": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00156": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00152": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00139": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00019": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 3
+  }
+ },
+ "q061": {
+  "private_chunk:pc-00029": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 3
+  },
+  "private_chunk:pc-00032": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 2
+  },
+  "private_chunk:pc-00001": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00024": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00314": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00511": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00028": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00312": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 2
+  },
+  "private_chunk:pc-00035": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00036": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00002": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q062": {
+  "question:qs-00017": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00027": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00084": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00108": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 3
+  },
+  "question:qs-00383": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00105": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00079": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00018": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q063": {
+  "question:qs-00393": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00394": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00294": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00297": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00262": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00196": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00135": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00397": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00391": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q064": {
+  "knowledge_node:kn-00273": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00134": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "private_chunk:pc-00084": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00153": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00091": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00139": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00130": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00146": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00131": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00060": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00128": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q065": {
+  "question:qs-00267": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00006": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "question:qs-00268": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00258": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00004": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00003": {
+   "votes": [
+    0,
+    1,
+    0,
+    1,
+    1
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00347": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00031": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q066": {
+  "private_chunk:pc-00134": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00154": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00271": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00369": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00370": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00367": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q067": {
+  "question:qs-00173": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00034": {
+   "votes": [
+    1,
+    1,
+    0,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00207": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00013": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00032": {
+   "votes": [
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00310": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00041": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00002": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00534": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00007": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00001": {
+   "votes": [
+    1,
+    1,
+    0,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00207": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q068": {
+  "question:qs-00325": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00029": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00011": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00323": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00077": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00115": {
+   "votes": [
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00320": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q069": {
+  "question:qs-00150": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00086": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00399": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00401": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00129": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00024": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00291": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00171": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00152": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00359": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  }
+ },
+ "q070": {
+  "knowledge_node:kn-00512": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00389": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00090": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00084": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00103": {
+   "votes": [
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00112": {
+   "votes": [
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00385": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00076": {
+   "votes": [
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00102": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00387": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  }
+ },
+ "q071": {
+  "knowledge_node:kn-00114": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00265": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00105": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "question:qs-00100": {
+   "votes": [
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00040": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00117": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  }
+ },
+ "q072": {
+  "private_chunk:pc-00098": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00031": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00021": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00038": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00089": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00108": {
+   "votes": [
+    1,
+    1,
+    1,
+    0,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00110": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00107": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q073": {
+  "knowledge_node:kn-00082": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00347": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00218": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00531": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 3
+  },
+  "private_chunk:pc-00015": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00282": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "question:qs-00132": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00139": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00061": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00399": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00072": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00121": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q074": {
+  "question:qs-00167": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00022": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00031": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00066": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00077": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 3
+  },
+  "private_chunk:pc-00078": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00163": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00119": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00104": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00079": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "private_chunk:pc-00106": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00068": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q075": {
+  "private_chunk:pc-00027": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00028": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00006": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00128": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00098": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "question:qs-00110": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 3
+  },
+  "private_chunk:pc-00090": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00036": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q076": {
+  "private_chunk:pc-00057": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00060": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00088": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00100": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00052": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00107": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00014": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00237": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00085": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00051": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  }
+ },
+ "q077": {
+  "knowledge_node:kn-00467": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00052": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00058": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00459": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00059": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "private_chunk:pc-00060": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "private_chunk:pc-00063": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00354": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "question:qs-00353": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "private_chunk:pc-00057": {
+   "votes": [
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  }
+ },
+ "q078": {
+  "private_chunk:pc-00149": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00080": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00280": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "question:qs-00379": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00505": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00327": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00047": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00081": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00279": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00311": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00033": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00125": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00076": {
+   "votes": [
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "private_chunk:pc-00092": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q079": {
+  "private_chunk:pc-00108": {
+   "votes": [
+    1,
+    1,
+    1,
+    0,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00038": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00107": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00022": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00004": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00031": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00021": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q080": {
+  "private_chunk:pc-00084": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00368": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "private_chunk:pc-00150": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00180": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00305": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 3
+  },
+  "question:qs-00306": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 3
+  },
+  "question:qs-00303": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 3
+  },
+  "private_chunk:pc-00086": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00078": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00042": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00059": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00291": {
+   "votes": [
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 4
+  },
+  "private_chunk:pc-00028": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q081": {
+  "private_chunk:pc-00100": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00036": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "private_chunk:pc-00092": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00033": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "question:qs-00283": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00033": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00082": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00037": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00011": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q082": {
+  "private_chunk:pc-00035": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00029": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00025": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00009": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00288": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00036": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00102": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00014": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00053": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00313": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q083": {
+  "question:qs-00003": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00085": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00089": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00004": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00108": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00002": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00003": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00090": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00088": {
+   "votes": [
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  }
+ },
+ "q084": {
+  "knowledge_node:kn-00129": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "knowledge_node:kn-00331": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00085": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00086": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00011": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00086": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00095": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00075": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00082": {
+   "votes": [
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  }
+ },
+ "q085": {
+  "question:qs-00002": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00013": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "question:qs-00078": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00102": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00090": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00088": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00149": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00089": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00004": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "knowledge_node:kn-00023": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00085": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00046": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00079": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q086": {
+  "question:qs-00177": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00062": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00017": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00026": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00539": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00036": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "knowledge_node:kn-00033": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00164": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00455": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00047": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q087": {
+  "knowledge_node:kn-00023": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00085": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00011": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00105": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00061": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00086": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00038": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00001": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00008": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00075": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00079": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00039": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00113": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00068": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00030": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  }
+ },
+ "q088": {
+  "private_chunk:pc-00086": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00023": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00085": {
+   "votes": [
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00009": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "private_chunk:pc-00088": {
+   "votes": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00011": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00008": {
+   "votes": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 5
+  }
+ },
+ "q089": {
+  "knowledge_node:kn-00103": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00532": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00087": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00072": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00152": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00116": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00332": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00217": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00139": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "question:qs-00101": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00068": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q090": {
+  "question:qs-00293": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 2
+  },
+  "question:qs-00177": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00047": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 3
+  },
+  "question:qs-00029": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00033": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00109": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00352": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00111": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00062": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q091": {
+  "knowledge_node:kn-00223": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00467": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00034": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00133": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00067": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00075": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00073": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00058": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00044": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00140": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  }
+ },
+ "q092": {
+  "question:qs-00397": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00105": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 3
+  },
+  "private_chunk:pc-00057": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00166": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00333": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00249": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00041": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00466": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00147": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00233": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00141": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q093": {
+  "knowledge_node:kn-00224": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00080": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00024": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00243": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00079": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00062": {
+   "votes": [
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 2
+  },
+  "question:qs-00268": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00257": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00004": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00248": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00447": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00129": {
+   "votes": [
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00078": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q094": {
+  "question:qs-00078": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00331": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00058": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00078": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 2
+  },
+  "private_chunk:pc-00099": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00097": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00077": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 2
+  },
+  "question:qs-00070": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 1
+  },
+  "private_chunk:pc-00086": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q095": {
+  "question:qs-00232": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 4
+  },
+  "knowledge_node:kn-00038": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00071": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00352": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00051": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00028": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00031": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00267": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q096": {
+  "question:qs-00216": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00011": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00070": {
+   "votes": [
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "question:qs-00352": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00182": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 1
+  },
+  "knowledge_node:kn-00305": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00057": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00530": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00217": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00180": {
+   "votes": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00292": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q097": {
+  "question:qs-00396": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00196": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "rel": 3,
+   "gold": 1,
+   "edge": 3
+  },
+  "knowledge_node:kn-00238": {
+   "votes": [
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "rel": 4,
+   "gold": 1,
+   "edge": 2
+  },
+  "private_chunk:pc-00151": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00085": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00239": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 4
+  },
+  "question:qs-00236": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00078": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00226": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00405": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00086": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q098": {
+  "private_chunk:pc-00035": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "knowledge_node:kn-00313": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 1
+  },
+  "question:qs-00252": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00086": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00036": {
+   "votes": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "rel": 5,
+   "gold": 1,
+   "edge": 0
+  },
+  "question:qs-00071": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00029": {
+   "votes": [
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  }
+ },
+ "q099": {
+  "private_chunk:pc-00009": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00080": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00039": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00066": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "private_chunk:pc-00103": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 2
+  },
+  "knowledge_node:kn-00457": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00273": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00512": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00093": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00011": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00173": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ },
+ "q100": {
+  "question:qs-00293": {
+   "votes": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 2,
+   "gold": 0,
+   "edge": 1
+  },
+  "knowledge_node:kn-00127": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "private_chunk:pc-00029": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 2
+  },
+  "question:qs-00109": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 1
+  },
+  "question:qs-00029": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00089": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00141": {
+   "votes": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "rel": 1,
+   "gold": 0,
+   "edge": 0
+  },
+  "knowledge_node:kn-00077": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00031": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "private_chunk:pc-00111": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  },
+  "question:qs-00352": {
+   "votes": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "rel": 0,
+   "gold": 0,
+   "edge": 0
+  }
+ }
+}

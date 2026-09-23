@@ -1,0 +1,15 @@
+fidelity: replayed quota@20 == frozen production list for 186/186 (qid, form) pairs
+quota@20 vs no quota: identical 20-slot lists for 186/186 pairs (the depth the frozen evaluation used)
+quota@5 changes the 5-slot list for 103/186 pairs
+
+== metrics over conditional_93 (both forms pooled, n=186 pairs) ==
+variant                   hit@1    hit@5      mrr   ndcg@5
+no_quota                 0.6935   0.9462   0.8046   0.7759
+quota@5                  0.6935   0.9570   0.8075   0.7544
+prod_quota@20            0.6935   0.9462   0.8046   0.7759
+
+== paired bootstrap (2,000 resamples, seed 20260929, metrics in the order given) ==
+no quota  - quota@5 : dndcg@5   =+0.0215 CI=[+0.0025,+0.0402]  dmrr      =-0.0030 CI=[-0.0094,+0.0022]  dhit@5    =-0.0108 CI=[-0.0376,+0.0108]  dhit@1    =+0.0000 CI=[+0.0000,+0.0000]
+no quota  - frozen production (A20 slice) : dndcg@5   =+0.0000 CI=[+0.0000,+0.0000]  dmrr      =+0.0000 CI=[+0.0000,+0.0000]  dhit@5    =+0.0000 CI=[+0.0000,+0.0000]  dhit@1    =+0.0000 CI=[+0.0000,+0.0000]
+
+question set: rankings=93, conditional_93=93, identical=True

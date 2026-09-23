@@ -1,0 +1,24 @@
+== 金标定义与规模 ==
+  majority5            有金标题数= 93  金标条目= 240
+  human_unanimous_pos  有金标题数= 84  金标条目= 155
+  human_any_pos        有金标题数= 93  金标条目= 373
+  model_only           有金标题数= 93  金标条目= 238
+  majority6_ge3        有金标题数= 93  金标条目= 268
+  majority6_strict4    有金标题数= 93  金标条目= 234
+  v3_frozen            有金标题数= 93  金标条目= 241
+  majority5            与 majority5 不同的题数=0
+  human_unanimous_pos  与 majority5 不同的题数=52
+  human_any_pos        与 majority5 不同的题数=66
+  model_only           与 majority5 不同的题数=6
+  majority6_ge3        与 majority5 不同的题数=17
+  majority6_strict4    与 majority5 不同的题数=5
+  v3_frozen            与 majority5 不同的题数=4
+
+== 统一空间指标（both = 两形态等权）
+  majority5            n(每形态)= 93/ 93  RRF=0.8867 Dense=0.7879 BM25=0.7043  Δ(RRF-Dense)=+0.0987 Δ(RRF-BM25)=+0.1824  CI下界≤0的形态=无
+  human_unanimous_pos  n(每形态)= 84/ 84  RRF=0.8938 Dense=0.7962 BM25=0.7940  Δ(RRF-Dense)=+0.0976 Δ(RRF-BM25)=+0.0999  CI下界≤0的形态=无
+  human_any_pos        n(每形态)= 93/ 93  RRF=0.8599 Dense=0.8076 BM25=0.5709  Δ(RRF-Dense)=+0.0523 Δ(RRF-BM25)=+0.2891  CI下界≤0的形态=['bare']
+  model_only           n(每形态)= 93/ 93  RRF=0.8890 Dense=0.7873 BM25=0.7032  Δ(RRF-Dense)=+0.1018 Δ(RRF-BM25)=+0.1858  CI下界≤0的形态=无
+  majority6_ge3        n(每形态)= 93/ 93  RRF=0.8775 Dense=0.7987 BM25=0.6787  Δ(RRF-Dense)=+0.0788 Δ(RRF-BM25)=+0.1988  CI下界≤0的形态=无
+  majority6_strict4    n(每形态)= 93/ 93  RRF=0.8852 Dense=0.7785 BM25=0.7070  Δ(RRF-Dense)=+0.1067 Δ(RRF-BM25)=+0.1782  CI下界≤0的形态=无
+  v3_frozen            n(每形态)= 93/ 93  RRF=0.8916 Dense=0.7792 BM25=0.7135  Δ(RRF-Dense)=+0.1124 Δ(RRF-BM25)=+0.1781  CI下界≤0的形态=无

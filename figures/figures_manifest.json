@@ -1,0 +1,16 @@
+{
+  "generated": "2026-09-23T17:53:40",
+  "figures": [
+    "f1_bootstrap_forest",
+    "f2_gold_sensitivity",
+    "f5_coverage_vs_fusion",
+    "f6_quota_ablation"
+  ],
+  "sources": {
+    "f1": "benchmark-results/20260916-221246-rag-fair-candidate-space/paired_bootstrap.csv",
+    "f2": "results/gold_sensitivity_ext.json",
+    "f5": "benchmark-results/20260916-221246-rag-fair-candidate-space/results_overall.csv",
+    "f6": "work/qa_100_human_v3.jsonl + work/hybrid_raw_a20_{template,bare}.jsonl"
+  },
+  "note": "all values read from the listed artefacts; oracle row excluded (its NDCG column in the archive is degenerate)"
+}

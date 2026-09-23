@@ -1,0 +1,3 @@
+# Standard library covers everything except the figures: report, quota_ablation,
+# gold_sensitivity_ext and revision_recompute are pure Python.
+matplotlib>=3.7

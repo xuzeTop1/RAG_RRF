@@ -1,0 +1,1114 @@
+{
+ "annotators": [
+  "评审一",
+  "评审二",
+  "评审三",
+  "评审五",
+  "评审六"
+ ],
+ "n_items": 847,
+ "threshold": 3,
+ "fleiss_kappa": 0.5774074859299433,
+ "full_agreement": 552,
+ "pairwise": {
+  "评审一 vs 评审二": {
+   "kappa": 0.42068951098659857,
+   "raw_agreement": 0.7296340023612751
+  },
+  "评审一 vs 评审三": {
+   "kappa": 0.6621889540764717,
+   "raw_agreement": 0.8370720188902007
+  },
+  "评审一 vs 评审五": {
+   "kappa": 0.6777138442144645,
+   "raw_agreement": 0.8453364817001181
+  },
+  "评审一 vs 评审六": {
+   "kappa": 0.3771666281488327,
+   "raw_agreement": 0.7107438016528925
+  },
+  "评审二 vs 评审三": {
+   "kappa": 0.5460385964051888,
+   "raw_agreement": 0.8193624557260921
+  },
+  "评审二 vs 评审五": {
+   "kappa": 0.6187620693159874,
+   "raw_agreement": 0.8536009445100354
+  },
+  "评审二 vs 评审六": {
+   "kappa": 0.775673707210488,
+   "raw_agreement": 0.9338842975206612
+  },
+  "评审三 vs 评审五": {
+   "kappa": 0.7333623757087028,
+   "raw_agreement": 0.8831168831168831
+  },
+  "评审三 vs 评审六": {
+   "kappa": 0.5137477936850363,
+   "raw_agreement": 0.8099173553719008
+  },
+  "评审五 vs 评审六": {
+   "kappa": 0.560466443773954,
+   "raw_agreement": 0.8347107438016529
+  }
+ },
+ "gold_size_hist": {
+  "4": 13,
+  "2": 25,
+  "8": 1,
+  "3": 16,
+  "1": 29,
+  "5": 3,
+  "6": 4,
+  "0": 7,
+  "7": 2
+ },
+ "empty_gold": [
+  "q073",
+  "q074",
+  "q087",
+  "q092",
+  "q095",
+  "q099",
+  "q100"
+ ],
+ "changed_vs_machine": [
+  {
+   "qid": "q002",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "question:qs-00039"
+   ],
+   "human_n": 2,
+   "machine_n": 1
+  },
+  {
+   "qid": "q003",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "knowledge_node:kn-00014",
+    "question:qs-00008",
+    "question:qs-00009"
+   ],
+   "human_n": 4,
+   "machine_n": 1
+  },
+  {
+   "qid": "q004",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00456",
+    "knowledge_node:kn-00458",
+    "knowledge_node:kn-00461",
+    "knowledge_node:kn-00462",
+    "knowledge_node:kn-00467",
+    "private_chunk:pc-00055",
+    "private_chunk:pc-00056",
+    "private_chunk:pc-00062",
+    "private_chunk:pc-00063",
+    "private_chunk:pc-00064",
+    "private_chunk:pc-00065",
+    "private_chunk:pc-00066",
+    "private_chunk:pc-00068",
+    "question:qs-00351",
+    "question:qs-00357"
+   ],
+   "human_only": [],
+   "human_n": 8,
+   "machine_n": 23
+  },
+  {
+   "qid": "q005",
+   "query": null,
+   "machine_only": [
+    "question:qs-00138"
+   ],
+   "human_only": [
+    "knowledge_node:kn-00180"
+   ],
+   "human_n": 2,
+   "machine_n": 2
+  },
+  {
+   "qid": "q006",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "question:qs-00133"
+   ],
+   "human_n": 2,
+   "machine_n": 1
+  },
+  {
+   "qid": "q007",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "question:qs-00123"
+   ],
+   "human_n": 2,
+   "machine_n": 1
+  },
+  {
+   "qid": "q009",
+   "query": null,
+   "machine_only": [
+    "private_chunk:pc-00055",
+    "question:qs-00350"
+   ],
+   "human_only": [],
+   "human_n": 1,
+   "machine_n": 3
+  },
+  {
+   "qid": "q011",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00426"
+   ],
+   "human_only": [],
+   "human_n": 2,
+   "machine_n": 3
+  },
+  {
+   "qid": "q012",
+   "query": null,
+   "machine_only": [
+    "private_chunk:pc-00054"
+   ],
+   "human_only": [
+    "question:qs-00358"
+   ],
+   "human_n": 4,
+   "machine_n": 4
+  },
+  {
+   "qid": "q013",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "private_chunk:pc-00010",
+    "private_chunk:pc-00011",
+    "private_chunk:pc-00012"
+   ],
+   "human_n": 4,
+   "machine_n": 1
+  },
+  {
+   "qid": "q014",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "knowledge_node:kn-00071",
+    "question:qs-00049"
+   ],
+   "human_n": 3,
+   "machine_n": 1
+  },
+  {
+   "qid": "q015",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "private_chunk:pc-00002",
+    "question:qs-00260"
+   ],
+   "human_n": 3,
+   "machine_n": 1
+  },
+  {
+   "qid": "q016",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "question:qs-00188"
+   ],
+   "human_n": 2,
+   "machine_n": 1
+  },
+  {
+   "qid": "q017",
+   "query": null,
+   "machine_only": [
+    "question:qs-00021"
+   ],
+   "human_only": [],
+   "human_n": 2,
+   "machine_n": 3
+  },
+  {
+   "qid": "q018",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00001",
+    "private_chunk:pc-00030",
+    "private_chunk:pc-00031",
+    "private_chunk:pc-00068",
+    "private_chunk:pc-00069",
+    "private_chunk:pc-00078",
+    "private_chunk:pc-00080",
+    "private_chunk:pc-00081",
+    "private_chunk:pc-00084",
+    "private_chunk:pc-00105",
+    "private_chunk:pc-00106",
+    "private_chunk:pc-00111",
+    "private_chunk:pc-00137",
+    "private_chunk:pc-00149",
+    "private_chunk:pc-00150",
+    "question:qs-00019",
+    "question:qs-00020"
+   ],
+   "human_only": [],
+   "human_n": 4,
+   "machine_n": 21
+  },
+  {
+   "qid": "q019",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "knowledge_node:kn-00056",
+    "knowledge_node:kn-00057"
+   ],
+   "human_n": 3,
+   "machine_n": 1
+  },
+  {
+   "qid": "q020",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "knowledge_node:kn-00107",
+    "knowledge_node:kn-00117"
+   ],
+   "human_n": 4,
+   "machine_n": 2
+  },
+  {
+   "qid": "q022",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "knowledge_node:kn-00289",
+    "knowledge_node:kn-00526"
+   ],
+   "human_n": 3,
+   "machine_n": 1
+  },
+  {
+   "qid": "q024",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "question:qs-00018"
+   ],
+   "human_n": 2,
+   "machine_n": 1
+  },
+  {
+   "qid": "q026",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00110"
+   ],
+   "human_only": [
+    "knowledge_node:kn-00134"
+   ],
+   "human_n": 5,
+   "machine_n": 5
+  },
+  {
+   "qid": "q027",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00446"
+   ],
+   "human_only": [],
+   "human_n": 2,
+   "machine_n": 3
+  },
+  {
+   "qid": "q028",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "question:qs-00321"
+   ],
+   "human_n": 3,
+   "machine_n": 2
+  },
+  {
+   "qid": "q032",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00075",
+    "knowledge_node:kn-00120",
+    "question:qs-00095"
+   ],
+   "human_only": [],
+   "human_n": 5,
+   "machine_n": 8
+  },
+  {
+   "qid": "q033",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "question:qs-00283"
+   ],
+   "human_n": 2,
+   "machine_n": 1
+  },
+  {
+   "qid": "q034",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "knowledge_node:kn-00381"
+   ],
+   "human_n": 2,
+   "machine_n": 1
+  },
+  {
+   "qid": "q035",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00347",
+    "knowledge_node:kn-00350"
+   ],
+   "human_only": [],
+   "human_n": 2,
+   "machine_n": 4
+  },
+  {
+   "qid": "q036",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "question:qs-00210"
+   ],
+   "human_n": 2,
+   "machine_n": 1
+  },
+  {
+   "qid": "q038",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "question:qs-00060"
+   ],
+   "human_n": 3,
+   "machine_n": 2
+  },
+  {
+   "qid": "q039",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "knowledge_node:kn-00204"
+   ],
+   "human_n": 2,
+   "machine_n": 1
+  },
+  {
+   "qid": "q043",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00311",
+    "knowledge_node:kn-00325",
+    "knowledge_node:kn-00335"
+   ],
+   "human_only": [
+    "private_chunk:pc-00010"
+   ],
+   "human_n": 2,
+   "machine_n": 4
+  },
+  {
+   "qid": "q046",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "question:qs-00359"
+   ],
+   "human_n": 2,
+   "machine_n": 1
+  },
+  {
+   "qid": "q047",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "question:qs-00384"
+   ],
+   "human_n": 2,
+   "machine_n": 1
+  },
+  {
+   "qid": "q048",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00040",
+    "question:qs-00043"
+   ],
+   "human_only": [],
+   "human_n": 2,
+   "machine_n": 4
+  },
+  {
+   "qid": "q049",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00131"
+   ],
+   "human_only": [
+    "knowledge_node:kn-00128",
+    "private_chunk:pc-00091",
+    "private_chunk:pc-00097"
+   ],
+   "human_n": 3,
+   "machine_n": 1
+  },
+  {
+   "qid": "q050",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "private_chunk:pc-00099",
+    "private_chunk:pc-00100",
+    "question:qs-00106",
+    "question:qs-00113"
+   ],
+   "human_n": 6,
+   "machine_n": 2
+  },
+  {
+   "qid": "q051",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00462",
+    "private_chunk:pc-00069",
+    "question:qs-00356"
+   ],
+   "human_only": [],
+   "human_n": 4,
+   "machine_n": 7
+  },
+  {
+   "qid": "q052",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00240"
+   ],
+   "human_only": [
+    "question:qs-00198"
+   ],
+   "human_n": 1,
+   "machine_n": 1
+  },
+  {
+   "qid": "q055",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00105"
+   ],
+   "human_only": [
+    "knowledge_node:kn-00316",
+    "knowledge_node:kn-00341",
+    "private_chunk:pc-00037"
+   ],
+   "human_n": 3,
+   "machine_n": 1
+  },
+  {
+   "qid": "q057",
+   "query": null,
+   "machine_only": [
+    "private_chunk:pc-00006"
+   ],
+   "human_only": [],
+   "human_n": 2,
+   "machine_n": 3
+  },
+  {
+   "qid": "q060",
+   "query": null,
+   "machine_only": [
+    "private_chunk:pc-00019"
+   ],
+   "human_only": [],
+   "human_n": 1,
+   "machine_n": 2
+  },
+  {
+   "qid": "q061",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "knowledge_node:kn-00312",
+    "private_chunk:pc-00032"
+   ],
+   "human_n": 3,
+   "machine_n": 1
+  },
+  {
+   "qid": "q064",
+   "query": null,
+   "machine_only": [
+    "private_chunk:pc-00130",
+    "private_chunk:pc-00131",
+    "private_chunk:pc-00139"
+   ],
+   "human_only": [],
+   "human_n": 2,
+   "machine_n": 5
+  },
+  {
+   "qid": "q065",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00359",
+    "knowledge_node:kn-00360",
+    "private_chunk:pc-00006",
+    "private_chunk:pc-00031"
+   ],
+   "human_only": [],
+   "human_n": 6,
+   "machine_n": 10
+  },
+  {
+   "qid": "q066",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "knowledge_node:kn-00370"
+   ],
+   "human_n": 2,
+   "machine_n": 1
+  },
+  {
+   "qid": "q067",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00304",
+    "knowledge_node:kn-00342",
+    "knowledge_node:kn-00343",
+    "knowledge_node:kn-00355",
+    "private_chunk:pc-00012",
+    "private_chunk:pc-00030",
+    "private_chunk:pc-00041"
+   ],
+   "human_only": [
+    "private_chunk:pc-00002"
+   ],
+   "human_n": 6,
+   "machine_n": 12
+  },
+  {
+   "qid": "q070",
+   "query": null,
+   "machine_only": [
+    "private_chunk:pc-00076",
+    "private_chunk:pc-00103",
+    "private_chunk:pc-00112"
+   ],
+   "human_only": [
+    "question:qs-00385",
+    "question:qs-00387",
+    "question:qs-00389"
+   ],
+   "human_n": 3,
+   "machine_n": 3
+  },
+  {
+   "qid": "q071",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00047",
+    "knowledge_node:kn-00105",
+    "knowledge_node:kn-00134",
+    "question:qs-00100"
+   ],
+   "human_only": [],
+   "human_n": 2,
+   "machine_n": 6
+  },
+  {
+   "qid": "q072",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00012",
+    "private_chunk:pc-00088",
+    "private_chunk:pc-00089",
+    "private_chunk:pc-00098",
+    "private_chunk:pc-00107",
+    "private_chunk:pc-00109",
+    "question:qs-00016"
+   ],
+   "human_only": [
+    "question:qs-00031"
+   ],
+   "human_n": 4,
+   "machine_n": 10
+  },
+  {
+   "qid": "q073",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00049",
+    "knowledge_node:kn-00282",
+    "knowledge_node:kn-00531"
+   ],
+   "human_only": [],
+   "human_n": 0,
+   "machine_n": 3
+  },
+  {
+   "qid": "q074",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00001",
+    "knowledge_node:kn-00018",
+    "private_chunk:pc-00077",
+    "private_chunk:pc-00078",
+    "private_chunk:pc-00079"
+   ],
+   "human_only": [],
+   "human_n": 0,
+   "machine_n": 5
+  },
+  {
+   "qid": "q075",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00109"
+   ],
+   "human_only": [],
+   "human_n": 1,
+   "machine_n": 2
+  },
+  {
+   "qid": "q076",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00008",
+    "knowledge_node:kn-00014",
+    "knowledge_node:kn-00024",
+    "knowledge_node:kn-00057",
+    "private_chunk:pc-00085",
+    "private_chunk:pc-00088",
+    "private_chunk:pc-00100"
+   ],
+   "human_only": [],
+   "human_n": 3,
+   "machine_n": 10
+  },
+  {
+   "qid": "q077",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00311",
+    "knowledge_node:kn-00357",
+    "knowledge_node:kn-00455",
+    "knowledge_node:kn-00460",
+    "private_chunk:pc-00052",
+    "private_chunk:pc-00055",
+    "private_chunk:pc-00059",
+    "private_chunk:pc-00062",
+    "private_chunk:pc-00063",
+    "private_chunk:pc-00064",
+    "private_chunk:pc-00067",
+    "private_chunk:pc-00087",
+    "question:qs-00274",
+    "question:qs-00277",
+    "question:qs-00278",
+    "question:qs-00310",
+    "question:qs-00315",
+    "question:qs-00322"
+   ],
+   "human_only": [],
+   "human_n": 7,
+   "machine_n": 25
+  },
+  {
+   "qid": "q078",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00372",
+    "knowledge_node:kn-00465",
+    "question:qs-00274",
+    "question:qs-00279",
+    "question:qs-00316"
+   ],
+   "human_only": [],
+   "human_n": 2,
+   "machine_n": 7
+  },
+  {
+   "qid": "q079",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00003",
+    "knowledge_node:kn-00004",
+    "knowledge_node:kn-00011",
+    "knowledge_node:kn-00012",
+    "knowledge_node:kn-00020",
+    "knowledge_node:kn-00022",
+    "knowledge_node:kn-00026",
+    "knowledge_node:kn-00027",
+    "knowledge_node:kn-00031",
+    "knowledge_node:kn-00032",
+    "knowledge_node:kn-00038",
+    "knowledge_node:kn-00069",
+    "knowledge_node:kn-00130",
+    "knowledge_node:kn-00513",
+    "private_chunk:pc-00045",
+    "private_chunk:pc-00052",
+    "private_chunk:pc-00075",
+    "private_chunk:pc-00076",
+    "private_chunk:pc-00077",
+    "private_chunk:pc-00078",
+    "private_chunk:pc-00081",
+    "private_chunk:pc-00083",
+    "private_chunk:pc-00084",
+    "private_chunk:pc-00085",
+    "private_chunk:pc-00087",
+    "private_chunk:pc-00088",
+    "private_chunk:pc-00089",
+    "private_chunk:pc-00090",
+    "private_chunk:pc-00098",
+    "private_chunk:pc-00105",
+    "private_chunk:pc-00107",
+    "private_chunk:pc-00109",
+    "private_chunk:pc-00110",
+    "private_chunk:pc-00111",
+    "private_chunk:pc-00112",
+    "private_chunk:pc-00115",
+    "private_chunk:pc-00117",
+    "private_chunk:pc-00126",
+    "private_chunk:pc-00152",
+    "private_chunk:pc-00155",
+    "question:qs-00002",
+    "question:qs-00003",
+    "question:qs-00013",
+    "question:qs-00015",
+    "question:qs-00016",
+    "question:qs-00029",
+    "question:qs-00030",
+    "question:qs-00034",
+    "question:qs-00174"
+   ],
+   "human_only": [],
+   "human_n": 4,
+   "machine_n": 53
+  },
+  {
+   "qid": "q080",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00070",
+    "knowledge_node:kn-00310",
+    "knowledge_node:kn-00312",
+    "knowledge_node:kn-00313",
+    "knowledge_node:kn-00316",
+    "knowledge_node:kn-00327",
+    "knowledge_node:kn-00328",
+    "knowledge_node:kn-00356",
+    "knowledge_node:kn-00357",
+    "knowledge_node:kn-00358",
+    "knowledge_node:kn-00487",
+    "question:qs-00288",
+    "question:qs-00291",
+    "question:qs-00295",
+    "question:qs-00296",
+    "question:qs-00304",
+    "question:qs-00309",
+    "question:qs-00312",
+    "question:qs-00313",
+    "question:qs-00317",
+    "question:qs-00325"
+   ],
+   "human_only": [],
+   "human_n": 4,
+   "machine_n": 25
+  },
+  {
+   "qid": "q081",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00015",
+    "knowledge_node:kn-00030",
+    "knowledge_node:kn-00035"
+   ],
+   "human_only": [],
+   "human_n": 4,
+   "machine_n": 7
+  },
+  {
+   "qid": "q083",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00311",
+    "private_chunk:pc-00085",
+    "private_chunk:pc-00088",
+    "private_chunk:pc-00108",
+    "question:qs-00322"
+   ],
+   "human_only": [],
+   "human_n": 6,
+   "machine_n": 11
+  },
+  {
+   "qid": "q084",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00028",
+    "knowledge_node:kn-00032",
+    "knowledge_node:kn-00129"
+   ],
+   "human_only": [],
+   "human_n": 5,
+   "machine_n": 8
+  },
+  {
+   "qid": "q085",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00003",
+    "knowledge_node:kn-00014",
+    "private_chunk:pc-00081",
+    "private_chunk:pc-00084",
+    "private_chunk:pc-00088",
+    "private_chunk:pc-00102",
+    "question:qs-00014"
+   ],
+   "human_only": [],
+   "human_n": 7,
+   "machine_n": 14
+  },
+  {
+   "qid": "q086",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00015"
+   ],
+   "human_only": [],
+   "human_n": 3,
+   "machine_n": 4
+  },
+  {
+   "qid": "q087",
+   "query": null,
+   "machine_only": [
+    "private_chunk:pc-00001",
+    "private_chunk:pc-00030",
+    "private_chunk:pc-00038",
+    "private_chunk:pc-00068",
+    "private_chunk:pc-00075",
+    "private_chunk:pc-00105",
+    "private_chunk:pc-00113",
+    "private_chunk:pc-00149"
+   ],
+   "human_only": [],
+   "human_n": 0,
+   "machine_n": 8
+  },
+  {
+   "qid": "q088",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00008",
+    "knowledge_node:kn-00013",
+    "private_chunk:pc-00085",
+    "private_chunk:pc-00088"
+   ],
+   "human_only": [],
+   "human_n": 4,
+   "machine_n": 8
+  },
+  {
+   "qid": "q090",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00362",
+    "knowledge_node:kn-00511",
+    "private_chunk:pc-00003",
+    "private_chunk:pc-00025",
+    "private_chunk:pc-00026",
+    "private_chunk:pc-00028",
+    "private_chunk:pc-00029",
+    "private_chunk:pc-00035",
+    "private_chunk:pc-00036",
+    "private_chunk:pc-00042",
+    "private_chunk:pc-00047",
+    "private_chunk:pc-00054",
+    "private_chunk:pc-00059",
+    "private_chunk:pc-00077",
+    "private_chunk:pc-00080",
+    "private_chunk:pc-00081",
+    "private_chunk:pc-00086",
+    "private_chunk:pc-00092",
+    "private_chunk:pc-00094",
+    "private_chunk:pc-00095",
+    "private_chunk:pc-00102",
+    "private_chunk:pc-00103",
+    "private_chunk:pc-00107",
+    "private_chunk:pc-00108",
+    "private_chunk:pc-00109",
+    "private_chunk:pc-00111",
+    "private_chunk:pc-00112",
+    "private_chunk:pc-00117",
+    "question:qs-00148",
+    "question:qs-00160",
+    "question:qs-00164",
+    "question:qs-00178",
+    "question:qs-00385",
+    "question:qs-00389"
+   ],
+   "human_only": [],
+   "human_n": 1,
+   "machine_n": 35
+  },
+  {
+   "qid": "q092",
+   "query": null,
+   "machine_only": [
+    "private_chunk:pc-00105"
+   ],
+   "human_only": [],
+   "human_n": 0,
+   "machine_n": 1
+  },
+  {
+   "qid": "q093",
+   "query": null,
+   "machine_only": [
+    "private_chunk:pc-00024",
+    "private_chunk:pc-00129"
+   ],
+   "human_only": [],
+   "human_n": 1,
+   "machine_n": 3
+  },
+  {
+   "qid": "q094",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00008",
+    "knowledge_node:kn-00023",
+    "knowledge_node:kn-00093",
+    "knowledge_node:kn-00103",
+    "private_chunk:pc-00027",
+    "private_chunk:pc-00033",
+    "private_chunk:pc-00038",
+    "private_chunk:pc-00048",
+    "private_chunk:pc-00049",
+    "private_chunk:pc-00065",
+    "private_chunk:pc-00070",
+    "private_chunk:pc-00074",
+    "private_chunk:pc-00085",
+    "private_chunk:pc-00095",
+    "private_chunk:pc-00116",
+    "private_chunk:pc-00117",
+    "private_chunk:pc-00126",
+    "private_chunk:pc-00137",
+    "question:qs-00069",
+    "question:qs-00092",
+    "question:qs-00093",
+    "question:qs-00107",
+    "question:qs-00146",
+    "question:qs-00148",
+    "question:qs-00158",
+    "question:qs-00160",
+    "question:qs-00163",
+    "question:qs-00167",
+    "question:qs-00169",
+    "question:qs-00170",
+    "question:qs-00176"
+   ],
+   "human_only": [],
+   "human_n": 3,
+   "machine_n": 34
+  },
+  {
+   "qid": "q095",
+   "query": null,
+   "machine_only": [
+    "private_chunk:pc-00121"
+   ],
+   "human_only": [],
+   "human_n": 0,
+   "machine_n": 1
+  },
+  {
+   "qid": "q096",
+   "query": null,
+   "machine_only": [],
+   "human_only": [
+    "knowledge_node:kn-00217",
+    "question:qs-00182"
+   ],
+   "human_n": 3,
+   "machine_n": 1
+  },
+  {
+   "qid": "q097",
+   "query": null,
+   "machine_only": [
+    "private_chunk:pc-00085"
+   ],
+   "human_only": [
+    "knowledge_node:kn-00238",
+    "question:qs-00196"
+   ],
+   "human_n": 2,
+   "machine_n": 1
+  },
+  {
+   "qid": "q098",
+   "query": null,
+   "machine_only": [
+    "knowledge_node:kn-00022",
+    "knowledge_node:kn-00086",
+    "private_chunk:pc-00024",
+    "private_chunk:pc-00028",
+    "private_chunk:pc-00030",
+    "private_chunk:pc-00032",
+    "private_chunk:pc-00034",
+    "private_chunk:pc-00055",
+    "private_chunk:pc-00101",
+    "private_chunk:pc-00137",
+    "private_chunk:pc-00138",
+    "question:qs-00071"
+   ],
+   "human_only": [
+    "knowledge_node:kn-00313"
+   ],
+   "human_n": 3,
+   "machine_n": 14
+  },
+  {
+   "qid": "q099",
+   "query": null,
+   "machine_only": [
+    "private_chunk:pc-00103"
+   ],
+   "human_only": [],
+   "human_n": 0,
+   "machine_n": 1
+  },
+  {
+   "qid": "q100",
+   "query": null,
+   "machine_only": [
+    "private_chunk:pc-00124",
+    "private_chunk:pc-00126"
+   ],
+   "human_only": [],
+   "human_n": 0,
+   "machine_n": 2
+  }
+ ]
+}
