@@ -122,9 +122,12 @@ and the pre-anonymisation mirror fingerprints. The reverse mapping is not
 published and cannot be recovered from these files.
 
 Reviewers are recorded under the role labels `评审一…评审六` (annotator 1…6) with no
-personal identifier; two are human experts, three are model raters, and one was
-dropped for being a near-duplicate of another. The `annotator` field keeps that
-label because `gold_annotation_sensitivity.py` keys on it rather than on the file
+personal identifier; two are human raters, three are model raters, and one was
+dropped for being a near-duplicate of another. The two human raters both hold a
+bachelor's degree in computing, and one of them is an author of the manuscript — the
+manuscript says so in Sections 5.2 and 7.3, and the bundle repeats it here so the two
+artefacts cannot be read as claiming different things. The `annotator` field keeps the
+role label because `gold_annotation_sensitivity.py` keys on it rather than on the file
 name.
 
 ### The five `ai_review_*` records
