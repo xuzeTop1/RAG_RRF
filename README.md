@@ -76,11 +76,12 @@ python check_release.py    # assert no non-pseudonymised material slipped back i
 ```
 
 `reproduce.py` checks a figure by the values written into
-`figures/figures_manifest.json`, not by image bytes: the PNG carries no
-timestamp any more and is byte-stable on a given machine, but rasterisation still
-follows the host's matplotlib build and installed fonts, so a differing PNG is
-reported as a note while a differing plotted value is a failure. The manifest
-itself stamps no date, so a clean run leaves the tree unmodified.
+`figures/figures_manifest.json`, not by image bytes. The PNG and PDF are also
+byte-stable now (no date or build string is stamped), but the SVG embeds
+per-render object ids derived from memory addresses, so its bytes differ on every
+run by construction — and a raster difference would in any case follow the host's
+matplotlib build and installed fonts. A differing plotted value is a failure; a
+differing image is reported as a note.
 
 Or stage by stage, in this order:
 

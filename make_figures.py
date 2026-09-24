@@ -39,10 +39,11 @@ INK, MUTED, HOT, COOL, ACC = '#1a1a1a', '#6b6b6b', '#c1272d', '#1f5c99', '#e8a33
 
 def save(fig, name, data=None):
     # PDF/SVG 供 LaTeX 投稿；Word 只能嵌位图，故另出 300 dpi PNG
-    # PNG 也去掉 Date/Software 文本块：否则同一份数据每次重跑字节都不同，
-    # reproduce.py 的图像比对就没有意义（数据本身改由 figures_manifest.json 校验）。
-    fig.savefig(OUT / f'{name}.pdf')
-    fig.savefig(OUT / f'{name}.svg')
+    # 三种格式都不写创建日期/构建串：否则同一份数据每次重跑字节都不同，
+    # "跑完 reproduce.py 工作区不变"就成了空话（数据本身由 figures_manifest.json 校验）。
+    # 每个后端只认自己的键名：PDF 用 CreationDate，SVG/PNG 用 Date，PNG 另有 Software。
+    fig.savefig(OUT / f'{name}.pdf', metadata={'CreationDate': None})
+    fig.savefig(OUT / f'{name}.svg', metadata={'Date': None})
     fig.savefig(OUT / f'{name}.png', dpi=300, metadata={'Date': None, 'Software': None})
     plt.close(fig)
     if data is not None:
