@@ -52,6 +52,8 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+from numerics import csum
+
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE
 WORK = HERE / "work"
@@ -370,8 +372,8 @@ def metrics(ranking: list[str], gold: set[str]) -> dict:
         if key in gold:
             rank = position
             break
-    dcg = sum(1.0 / math.log2(position + 1) for position, key in enumerate(ranking[:CUTOFF], start=1) if key in gold)
-    ideal = sum(1.0 / math.log2(position + 1) for position in range(1, min(len(gold), CUTOFF) + 1))
+    dcg = csum(1.0 / math.log2(position + 1) for position, key in enumerate(ranking[:CUTOFF], start=1) if key in gold)
+    ideal = csum(1.0 / math.log2(position + 1) for position in range(1, min(len(gold), CUTOFF) + 1))
     return {
         "hit@1": 1.0 if rank == 1 else 0.0,
         "hit@3": 1.0 if rank is not None and rank <= 3 else 0.0,
@@ -400,7 +402,7 @@ ORACLE_KEY = "oracle_best_single_channel"
 
 
 def aggregate(rows) -> dict:
-    return {key: sum(row[key] for row in rows) / len(rows)
+    return {key: csum(row[key] for row in rows) / len(rows)
             for key in ("hit@1", "hit@3", "hit@5", "mrr", "ndcg@5")}
 
 
@@ -417,13 +419,13 @@ def cluster_bootstrap(left: list, right: list, n_boot: int = N_BOOT):
         drawn = [qids[rng.randrange(len(qids))] for _ in qids]
         for metric in ("ndcg@5", "mrr"):
             pool = diffs[metric]
-            total = sum(sum(pool[q]) for q in drawn)
+            total = csum(csum(pool[q]) for q in drawn)
             count = sum(len(pool[q]) for q in drawn)
             sampled[metric].append(total / count)
     out = {}
     for metric, values in sampled.items():
         values.sort()
-        observed = sum(sum(diffs[metric][q]) for q in qids) / sum(len(diffs[metric][q]) for q in qids)
+        observed = csum(csum(diffs[metric][q]) for q in qids) / sum(len(diffs[metric][q]) for q in qids)
         out[metric] = {
             "delta": observed,
             "ci": [values[int(0.025 * n_boot)], values[int(0.975 * n_boot) - 1]],

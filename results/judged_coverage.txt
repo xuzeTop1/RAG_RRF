@@ -1,0 +1,32 @@
+annotation pool: 847 pairs over 100 questions (keys of `gold_votes`)
+conditional_93 = the frozen run set minus NO_GOLD (93 qids)
+gate: the 93 named by NO_GOLD and the 93 with a non-empty gold_ids coincide -> ok
+
+== pool reconstruction from the frozen Top-5 slots (the six runs the manuscript describes) ==
+  deployment path (hybrid_raw_a20_* x2 forms x3 channels)        exact per-question match 44/93 | pool pairs outside the union  78 | union items never judged 4
+     questions whose pool the frozen runs do not reproduce (49): q002 q003 q004 q005 q009 q010 q013 q014 q017 q018 q019 q020 q024 q025 q026 q028 q029 q031 q032 q035 q036 q037 q038 q041 q043 q046 q047 q048 q049 q051 q052 q053 q054 q055 q061 q062 q068 q072 q077 q081 q082 q084 q086 q089 q090 q091 q094 q096 q097
+  unified space (fair_rank_unified_* x2 forms x3 channels)       exact per-question match 22/93 | pool pairs outside the union 152 | union items never judged 48
+  baseline copy (fair_rank_base_* x2 forms x3 channels)          exact per-question match 44/93 | pool pairs outside the union  78 | union items never judged 4
+
+== Judged@5 over conditional_93 (share of returned Top-5 slots that carry a vote) ==
+   denominator A = slots actually returned; B = a fixed 5 (short lists are under-coverage, not exempt)
+  --- formulation: template ---
+    BM25, unified index                              A=0.7810  B=0.3527   questions returning <5 slots: 74/93
+    Dense, unified index                             A=1.0000  B=1.0000   questions returning <5 slots: 0/93
+    RRF k=60 (frozen hybrid list, unified)           A=0.9527  B=0.9527   questions returning <5 slots: 0/93
+    RRF k=60 (recomputed from the two channel lists) A=0.9484  B=0.9484   questions returning <5 slots: 0/93
+    RRF k=1 (recomputed)                             A=0.9419  B=0.9419   questions returning <5 slots: 0/93
+    Interleave (recomputed, BM25 first)              A=0.9269  B=0.9269   questions returning <5 slots: 0/93
+    BM25, deployment path (159 private chunks)       A=1.0000  B=0.3161   questions returning <5 slots: 78/93
+    RRF k=60 (frozen hybrid list, deployment)        A=0.9914  B=0.9914   questions returning <5 slots: 0/93
+  --- formulation: bare ---
+    BM25, unified index                              A=0.7810  B=0.3527   questions returning <5 slots: 74/93
+    Dense, unified index                             A=1.0000  B=1.0000   questions returning <5 slots: 0/93
+    RRF k=60 (frozen hybrid list, unified)           A=0.9527  B=0.9527   questions returning <5 slots: 0/93
+    RRF k=60 (recomputed from the two channel lists) A=0.9441  B=0.9441   questions returning <5 slots: 0/93
+    RRF k=1 (recomputed)                             A=0.9398  B=0.9398   questions returning <5 slots: 0/93
+    Interleave (recomputed, BM25 first)              A=0.9247  B=0.9247   questions returning <5 slots: 0/93
+    BM25, deployment path (159 private chunks)       A=1.0000  B=0.3161   questions returning <5 slots: 78/93
+    RRF k=60 (frozen hybrid list, deployment)        A=0.9935  B=0.9935   questions returning <5 slots: 0/93
+
+reading: Dense is fully judged by construction (its Top-5 built the pool); the unified BM25 row is the pooling limit, not a ranking result.

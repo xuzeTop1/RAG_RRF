@@ -52,13 +52,21 @@ the manuscript rather than to the measurement.
 
 ## Requirements
 
-Python 3.10+ with `matplotlib` (which pulls in `numpy`); everything else is
+Python 3.9+ with `matplotlib` (which pulls in `numpy`); everything else is
 standard library. No GPU, no network, no model inference — the embeddings and
 rankings are frozen assets.
 
 ```bash
 pip install matplotlib
 ```
+
+The published numbers do **not** depend on the interpreter version. CPython 3.12
+changed the algorithm inside the built-in `sum()` for floats (compensated
+summation), which is enough to move a metric in its last binary digits; every
+float accumulation in this bundle goes through `numerics.csum`, one pure-Python
+compensated sum, so any 3.9+ interpreter yields the same bytes. Checked on
+3.11.15 (naive `sum()`) against 3.12.10 (compensated `sum()`): all four numeric
+stages, including the three frozen CSVs, regenerate identically.
 
 ## Quick start
 
@@ -67,9 +75,12 @@ python reproduce.py        # re-run every stage, diff against the checked-in art
 python check_release.py    # assert no non-pseudonymised material slipped back in
 ```
 
-`reproduce.py` compares figures as PNG bytes, so a clean run leaves the tree
-unmodified; the SVG, PDF and `figures_manifest.json` stamp a generation date and
-will show as touched even though nothing measured changed.
+`reproduce.py` checks a figure by the values written into
+`figures/figures_manifest.json`, not by image bytes: the PNG carries no
+timestamp any more and is byte-stable on a given machine, but rasterisation still
+follows the host's matplotlib build and installed fonts, so a differing PNG is
+reported as a note while a differing plotted value is a failure. The manifest
+itself stamps no date, so a clean run leaves the tree unmodified.
 
 Or stage by stage, in this order:
 
@@ -79,7 +90,9 @@ Or stage by stage, in this order:
 | 2 | `python quota_ablation.py` | `results/quota_ablation.txt` — the Section 6.1 quota on/off ablation |
 | 3 | `python gold_sensitivity_ext.py` | `results/gold_sensitivity_ext.{json,txt}` — the Section 6.6 gold-label sensitivity |
 | 4 | `python revision_recompute.py` | `results/revision_recompute.json` — pooled-formulation intervals, per-metric oracle upper bound, source exposure |
-| 5 | `python make_figures.py` | `figures/*` — every figure, read from the artefacts above |
+| 5 | `python judged_coverage_check.py` | `results/judged_coverage.txt` — how much of each Top-5 was judged, and how far the frozen runs rebuild the pool |
+| 6 | `python unjudged_sensitivity.py` | `results/unjudged_sensitivity.txt` — the Section 6.2 re-scoring of unjudged entities (condensed, and counted relevant inside the Top-5 window) |
+| 7 | `python make_figures.py` | `figures/*` — every figure, read from the artefacts above |
 
 `python fair_candidate_space.py prepare` and `rank` are **not** runnable from this
 checkout: they rebuild the SQLite mirrors from the private knowledge base and drive
@@ -113,6 +126,73 @@ dropped for being a near-duplicate of another. The `annotator` field keeps that
 label because `gold_annotation_sensitivity.py` keys on it rather than on the file
 name.
 
+### The five `ai_review_*` records
+
+Five base questions — q013, q018, q055, q072, q077 — carry an `ai_review_supplement`
+(adds gold items) or `ai_review_correction` (replaces them) field. The name is kept
+from the private annotation archive rather than prettified, because it records what
+happened: after the five raters' exports were frozen, the authors ran one further
+review pass over the borderline questions with an LLM reviewer drafting the
+assessment, and confirmed each change themselves. These adjustments are not votes and
+sit outside the equal-weight majority rule, and they do move gold: on q055 three items
+the majority had marked relevant were removed, and on q018, q072 and q077 one item each
+was added that no rater had been shown, because it fell outside the pooling depth
+(q013's entry adds nothing). So `v3_frozen`, the label set the manuscript reports on,
+differs from the pure ≥3/5 majority on four of the five.
+
+Two consequences are stated in the manuscript rather than smoothed over: Section 6.6
+repeats the headline comparison under the pure five-rater majority (NDCG@5 0.8867
+against 0.8916), and the AI-use statement says the tools took no part in the **blind
+five-rater annotation**, which is deliberately narrower than "no AI was involved in
+labelling". The note text is corpus-derived and redacted here; the field structure, the
+affected qids and the added/removed entity ids are not.
+
+### Which run built the annotation pool
+
+`work/qa_100_human_v3.jsonl` records the pool as annotated: 847 query–entity pairs,
+per question the keys of `gold_votes`. The manuscript describes pooling as the union of
+the Top-5 of BM25, Dense and Hybrid under both formulations — six runs — and the frozen
+ranking files in `work/` do carry exactly those six runs, but they are the run set the
+metrics were computed from, which was rebuilt after annotation. Reconstructing the union
+of their Top-5 slots reproduces the per-question pool **exactly for 44 of the 93
+questions**: 78 pairs that carry votes are outside that union, and 4 items inside it were
+never judged. Run `python judged_coverage_check.py` for the per-question detail.
+
+This is a limitation of the released ordering, not of the labels: every reported metric
+uses the votes as annotated, so nothing here changes a number in the manuscript. It does
+mean an unjudged-item analysis cannot be derived from these files alone, and that the
+pool cannot be re-cut from the frozen runs.
+
+`judged_coverage_check.py` writes the detail to `results/judged_coverage.txt`, including
+how much of each returned Top-5 actually carries a vote (micro average over
+`conditional_93`, denominator = slots returned; the fusion rows recomputed from the two
+channel lists, as in Tables 3–4):
+
+| Strategy | templated | concept-only |
+|---|---|---|
+| Dense, unified index | 1.0000 | 1.0000 |
+| RRF (k=60), unified | 0.9484 | 0.9441 |
+| RRF (k=1), unified | 0.9419 | 0.9398 |
+| Interleave, unified | 0.9269 | 0.9247 |
+| BM25, unified index | 0.7810 | 0.7810 |
+
+BM25 on the unified index is the pooling limit rather than a ranking result: it returns
+fewer than five hits for 74 of the 93 questions, and under a fixed five-slot denominator
+its coverage is 0.3527.
+
+### Re-scoring the unjudged entities
+
+`unjudged_sensitivity.py` backs the Section 6.2 sentence. It first re-derives the eight
+published control cells bit-for-bit from `paired_bootstrap.csv` and stops if they do not
+match, so the three readings cannot drift apart silently. `condensed` drops unjudged
+entities from the returned list; `promoted@5` counts unjudged entities inside the Top-5
+window of any compared strategy as relevant, with one relevance set per question so all
+systems face the same gold. Both keep every NDCG@5 interval and every RRF–Dense MRR@5
+interval above zero, while RRF–BM25 MRR@5 crosses or touches zero in three of its four
+intervals. A third reading — promotion over each system's whole list — is printed as a
+caution: it inflates the ideal DCG of whichever system returns more unjudged material and
+reverses the sign of RRF minus BM25 NDCG@5, which is why the manuscript names the window.
+
 ### Known disclosure
 
 `src-tauri/src/rag/hybrid.rs` is published **byte-for-byte as measured**, including
@@ -121,6 +201,31 @@ a string about the intuitive meaning of a limit). Those are test inputs for the
 FTS5 trigram path, not corpus passages, but they are Chinese educational wording and
 are therefore called out rather than silently edited: altering them would mean
 shipping reference code that was never compiled.
+
+## Latency is not re-derivable from this package
+
+The manuscript reports retrieval and fusion averaging **12.662 ms** (sample sd 1.114,
+P95 13.801, max 19.324) with the query vector preloaded. That is a summary of 100 timed
+runs of the native Rust path in the desktop application; only the four summary values
+were recorded, the individual timings were not archived, and the record does not say
+which of the two evaluation copies produced them. Treat 12.662 ms as a stated
+measurement, not a quantity to reproduce.
+
+What this package *does* let you time is the per-query `elapsedMicros` field in the
+frozen ranking files — one repetition per question and configuration, so a different
+measurement. Averaged over the 93 questions, the `hybrid` configuration gives:
+
+| Run set | mean | sd | P95 | max |
+|---|---|---|---|---|
+| deployment path, templated (`hybrid_raw_a20_template`) | 12.969 ms | 0.779 | 14.073 | 17.440 |
+| deployment path, concept-only (`hybrid_raw_a20_bare`) | 12.778 ms | 0.432 | 13.480 | 14.023 |
+| unified space, templated (`fair_rank_unified_template`) | 16.768 ms | 2.705 | 20.819 | 28.224 |
+| unified space, concept-only (`fair_rank_unified_bare`) | 16.112 ms | 2.628 | 19.889 | 30.707 |
+
+The deployment path is cheaper because only 159 private chunks carry the trigram index
+there, while the unified space ranks 1,696 entities on both channels. The query-embedding
+figures (174.3 ms templated, 41.0 ms concept-only) are likewise batch summaries over 100
+queries with no per-sample variance retained.
 
 ## Headline numbers reproduced from these assets
 

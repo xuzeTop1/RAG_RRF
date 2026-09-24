@@ -1,5 +1,4 @@
 {
-  "generated": "2026-09-23T17:53:40",
   "figures": [
     "f1_bootstrap_forest",
     "f2_gold_sensitivity",
@@ -12,5 +11,314 @@
     "f5": "benchmark-results/20260916-221246-rag-fair-candidate-space/results_overall.csv",
     "f6": "work/qa_100_human_v3.jsonl + work/hybrid_raw_a20_{template,bare}.jsonl"
   },
-  "note": "all values read from the listed artefacts; oracle row excluded (its NDCG column in the archive is degenerate)"
+  "note": "all values read from the listed artefacts; oracle comparisons excluded (its NDCG column in the archive is degenerate). f1 plots the ten rows of Table 4: the eight per-formulation RRF comparisons plus the BM25 index-expansion rows, which coincide across formulations and are drawn once.",
+  "plotted": {
+    "f1_bootstrap_forest": [
+      {
+        "group": "rrf_k60_unified - bm25_unified",
+        "form": "template",
+        "metric": "ndcg@5",
+        "delta": 0.18807153217781855,
+        "lo": 0.13829656287674463,
+        "hi": 0.2398274383125381
+      },
+      {
+        "group": "rrf_k60_unified - bm25_unified",
+        "form": "template",
+        "metric": "mrr",
+        "delta": 0.07311827956989247,
+        "lo": 0.03118279569892473,
+        "hi": 0.12096774193548387
+      },
+      {
+        "group": "rrf_k60_unified - bm25_unified",
+        "form": "bare",
+        "metric": "ndcg@5",
+        "delta": 0.1680723877806337,
+        "lo": 0.12463227202413606,
+        "hi": 0.21183622457284465
+      },
+      {
+        "group": "rrf_k60_unified - bm25_unified",
+        "form": "bare",
+        "metric": "mrr",
+        "delta": 0.04767025089605735,
+        "lo": 0.017204301075268817,
+        "hi": 0.08333333333333333
+      },
+      {
+        "group": "rrf_k60_unified - dense_unified",
+        "form": "template",
+        "metric": "ndcg@5",
+        "delta": 0.13075014235153584,
+        "lo": 0.06981203663134902,
+        "hi": 0.19606925840056452
+      },
+      {
+        "group": "rrf_k60_unified - dense_unified",
+        "form": "template",
+        "metric": "mrr",
+        "delta": 0.11146953405017922,
+        "lo": 0.0456989247311828,
+        "hi": 0.17939068100358424
+      },
+      {
+        "group": "rrf_k60_unified - dense_unified",
+        "form": "bare",
+        "metric": "ndcg@5",
+        "delta": 0.09403361688799944,
+        "lo": 0.03630534011014552,
+        "hi": 0.15711968445212232
+      },
+      {
+        "group": "rrf_k60_unified - dense_unified",
+        "form": "bare",
+        "metric": "mrr",
+        "delta": 0.09910394265232975,
+        "lo": 0.03691756272401434,
+        "hi": 0.16594982078853046
+      },
+      {
+        "group": "bm25_unified - bm25_prod_chunkonly",
+        "form": "cross-form",
+        "metric": "ndcg@5",
+        "delta": 0.47915851939803145,
+        "lo": 0.3840439944279999,
+        "hi": 0.570801062574294
+      },
+      {
+        "group": "bm25_unified - bm25_prod_chunkonly",
+        "form": "cross-form",
+        "metric": "mrr",
+        "delta": 0.5553763440860215,
+        "lo": 0.4446236559139785,
+        "hi": 0.6623655913978495
+      }
+    ],
+    "f2_gold_sensitivity": [
+      {
+        "rule": "v3_frozen",
+        "form": "template",
+        "questionsWithGold": 93,
+        "bm25_ndcg@5": 0.713504472563553,
+        "dense_ndcg@5": 0.7708258623898359,
+        "rrf_ndcg@5": 0.9015760047413717,
+        "ci_rrf_minus_dense_ndcg@5": [
+          0.06981203663134902,
+          0.19606925840056452
+        ]
+      },
+      {
+        "rule": "v3_frozen",
+        "form": "bare",
+        "questionsWithGold": 93,
+        "bm25_ndcg@5": 0.713504472563553,
+        "dense_ndcg@5": 0.7875432434561873,
+        "rrf_ndcg@5": 0.8815768603441868,
+        "ci_rrf_minus_dense_ndcg@5": [
+          0.03630534011014552,
+          0.15711968445212232
+        ]
+      },
+      {
+        "rule": "majority5",
+        "form": "template",
+        "questionsWithGold": 93,
+        "bm25_ndcg@5": 0.7043035415590461,
+        "dense_ndcg@5": 0.7815776497440413,
+        "rrf_ndcg@5": 0.8984674192628246,
+        "ci_rrf_minus_dense_ndcg@5": [
+          0.057352383580074544,
+          0.17932993132861544
+        ]
+      },
+      {
+        "rule": "majority5",
+        "form": "bare",
+        "questionsWithGold": 93,
+        "bm25_ndcg@5": 0.7043035415590461,
+        "dense_ndcg@5": 0.7942552434576798,
+        "rrf_ndcg@5": 0.8748626820793638,
+        "ci_rrf_minus_dense_ndcg@5": [
+          0.025711547608516537,
+          0.14011441283712348
+        ]
+      },
+      {
+        "rule": "human_unanimous_pos",
+        "form": "template",
+        "questionsWithGold": 84,
+        "bm25_ndcg@5": 0.7939948009705786,
+        "dense_ndcg@5": 0.788389494633833,
+        "rrf_ndcg@5": 0.9059715545700195,
+        "ci_rrf_minus_dense_ndcg@5": [
+          0.06274387754006779,
+          0.17596439180804221
+        ]
+      },
+      {
+        "rule": "human_unanimous_pos",
+        "form": "bare",
+        "questionsWithGold": 84,
+        "bm25_ndcg@5": 0.7939948009705786,
+        "dense_ndcg@5": 0.804085058496355,
+        "rrf_ndcg@5": 0.8817243904381984,
+        "ci_rrf_minus_dense_ndcg@5": [
+          0.02805896767081207,
+          0.1349426204901373
+        ]
+      },
+      {
+        "rule": "human_any_pos",
+        "form": "template",
+        "questionsWithGold": 93,
+        "bm25_ndcg@5": 0.5708694233377566,
+        "dense_ndcg@5": 0.7824528265161298,
+        "rrf_ndcg@5": 0.8541323997256852,
+        "ci_rrf_minus_dense_ndcg@5": [
+          0.026809579610068673,
+          0.12165839119839648
+        ]
+      },
+      {
+        "rule": "human_any_pos",
+        "form": "bare",
+        "questionsWithGold": 93,
+        "bm25_ndcg@5": 0.5708694233377566,
+        "dense_ndcg@5": 0.8328015372939295,
+        "rrf_ndcg@5": 0.8657505547415006,
+        "ci_rrf_minus_dense_ndcg@5": [
+          -0.004499443411097432,
+          0.07801824378285577
+        ]
+      },
+      {
+        "rule": "model_only",
+        "form": "template",
+        "questionsWithGold": 93,
+        "bm25_ndcg@5": 0.7032341226611899,
+        "dense_ndcg@5": 0.7830295431481942,
+        "rrf_ndcg@5": 0.9000013703177266,
+        "ci_rrf_minus_dense_ndcg@5": [
+          0.0553884351172408,
+          0.1795577437584412
+        ]
+      },
+      {
+        "rule": "model_only",
+        "form": "bare",
+        "questionsWithGold": 93,
+        "bm25_ndcg@5": 0.7032341226611899,
+        "dense_ndcg@5": 0.7915002830911146,
+        "rrf_ndcg@5": 0.8780873793015634,
+        "ci_rrf_minus_dense_ndcg@5": [
+          0.030036585643835777,
+          0.1457798579070479
+        ]
+      },
+      {
+        "rule": "majority6_ge3",
+        "form": "template",
+        "questionsWithGold": 93,
+        "bm25_ndcg@5": 0.6786783553498369,
+        "dense_ndcg@5": 0.7793012723092512,
+        "rrf_ndcg@5": 0.8793649791010376,
+        "ci_rrf_minus_dense_ndcg@5": [
+          0.04625737647556625,
+          0.15847268993060945
+        ]
+      },
+      {
+        "rule": "majority6_ge3",
+        "form": "bare",
+        "questionsWithGold": 93,
+        "bm25_ndcg@5": 0.6786783553498369,
+        "dense_ndcg@5": 0.8180622046394315,
+        "rrf_ndcg@5": 0.8756700773755383,
+        "ci_rrf_minus_dense_ndcg@5": [
+          0.007363913593688464,
+          0.11323823290815736
+        ]
+      },
+      {
+        "rule": "majority6_strict4",
+        "form": "template",
+        "questionsWithGold": 93,
+        "bm25_ndcg@5": 0.707020488468575,
+        "dense_ndcg@5": 0.7719013784113461,
+        "rrf_ndcg@5": 0.895185829533716,
+        "ci_rrf_minus_dense_ndcg@5": [
+          0.06031807152632691,
+          0.18845546336775718
+        ]
+      },
+      {
+        "rule": "majority6_strict4",
+        "form": "bare",
+        "questionsWithGold": 93,
+        "bm25_ndcg@5": 0.707020488468575,
+        "dense_ndcg@5": 0.7851463764282641,
+        "rrf_ndcg@5": 0.8751862377955185,
+        "ci_rrf_minus_dense_ndcg@5": [
+          0.03274946187214977,
+          0.1490321704074135
+        ]
+      }
+    ],
+    "f5_coverage_vs_fusion": [
+      {
+        "step": "BM25, 159 private chunks only (production index)",
+        "ndcg@5": 0.23434595316552156
+      },
+      {
+        "step": "BM25, unified 1,696 entities",
+        "ndcg@5": 0.713504472563553
+      },
+      {
+        "step": "Dense, unified 1,696 entities",
+        "ndcg@5": 0.7708258623898359
+      },
+      {
+        "step": "RRF (k=60), unified no quota",
+        "ndcg@5": 0.9015760047413717
+      }
+    ],
+    "f6_quota_ablation": {
+      "levels_off": {
+        "hit@1": 0.6935483870967742,
+        "hit@5": 0.946236559139785,
+        "mrr": 0.8045698924731183,
+        "ndcg@5": 0.775910886464989
+      },
+      "levels_on": {
+        "hit@1": 0.6935483870967742,
+        "hit@5": 0.956989247311828,
+        "mrr": 0.8075268817204301,
+        "ndcg@5": 0.7544484962059042
+      },
+      "diff_off_minus_on@5": {
+        "ndcg@5": {
+          "delta": 0.021462390259084637,
+          "ci": [
+            0.0025316538557560078,
+            0.04024079666981333
+          ]
+        },
+        "mrr": {
+          "delta": -0.0029569892473118283,
+          "ci": [
+            -0.009408602150537635,
+            0.002150537634408602
+          ]
+        },
+        "hit@5": {
+          "delta": -0.010752688172043012,
+          "ci": [
+            -0.03763440860215054,
+            0.010752688172043012
+          ]
+        }
+      }
+    }
+  }
 }

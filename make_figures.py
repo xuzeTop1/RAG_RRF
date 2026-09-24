@@ -6,7 +6,6 @@
 import csv
 import json
 import sys
-from datetime import datetime
 from pathlib import Path
 
 import matplotlib
@@ -38,13 +37,22 @@ WIDTH = {'f1_bootstrap_forest': 5.4, 'f2_gold_sensitivity': 6.1, 'f5_coverage_vs
 INK, MUTED, HOT, COOL, ACC = '#1a1a1a', '#6b6b6b', '#c1272d', '#1f5c99', '#e8a33d'
 
 
-def save(fig, name):
+def save(fig, name, data=None):
     # PDF/SVG 供 LaTeX 投稿；Word 只能嵌位图，故另出 300 dpi PNG
+    # PNG 也去掉 Date/Software 文本块：否则同一份数据每次重跑字节都不同，
+    # reproduce.py 的图像比对就没有意义（数据本身改由 figures_manifest.json 校验）。
     fig.savefig(OUT / f'{name}.pdf')
     fig.savefig(OUT / f'{name}.svg')
-    fig.savefig(OUT / f'{name}.png', dpi=300)
+    fig.savefig(OUT / f'{name}.png', dpi=300, metadata={'Date': None, 'Software': None})
     plt.close(fig)
+    if data is not None:
+        PLOTTED[name] = data
     return name
+
+
+# 每张图实际画出去的数值，随 figures_manifest.json 一起发布；
+# reproduce.py 按这个文件逐字节比对，图像字节只作提示。
+PLOTTED = {}
 
 
 SHORT = {'rrf_k60_unified': 'RRF', 'bm25_unified': 'BM25-U', 'dense_unified': 'Dense',
@@ -74,14 +82,44 @@ def load_overall():
             for r in rows}
 
 
+RRF_GROUPS = ('rrf_k60_unified - bm25_unified', 'rrf_k60_unified - dense_unified')
+CROSSFORM_GROUP = 'bm25_unified - bm25_prod_chunkonly'
+
+
+def table4_rows(kept):
+    """图里只画正文表 4 的那 10 行，图与表逐项对应。
+
+    8 行是两种提问形态下的 RRF 对照；2 行是 BM25 索引扩展，该比较两种形态数值相同，
+    故合并成一行 `cross-form` 显示——相同与否在这里实测，不靠正文里的一句话。
+    归档 CSV 另外 6 行（4 行退化 Oracle 对照、2 行 Dense−BM25-P）不进图，仍可复算。
+    """
+    rows = [r for r in kept if r['group'] in RRF_GROUPS]
+    for metric in ('ndcg@5', 'mrr'):
+        pair = {r['form']: r for r in kept
+                if r['group'] == CROSSFORM_GROUP and r['metric'] == metric}
+        t, b = pair.get('template'), pair.get('bare')
+        if not t or not b:
+            raise SystemExit('missing %s row for the index-expansion comparison' % metric)
+        if (t['delta'], t['lo'], t['hi']) != (b['delta'], b['lo'], b['hi']):
+            raise SystemExit('index-expansion %s no longer coincides across formulations'
+                             % metric)
+        merged = dict(t)
+        merged['form'] = 'cross-form'
+        rows.append(merged)
+    if len(rows) != 10:
+        raise SystemExit('expected the 10 rows of Table 4, built %d' % len(rows))
+    return rows
+
+
 def f1_forest():
-    data, dropped = load_bootstrap()
+    data = table4_rows(load_bootstrap()[0])
     labels, pos, gap_after, prev = [], [], [], None
     for i, r in enumerate(data):
         if prev is not None and r['group'] != prev:
             gap_after.append(i - 0.5)
         prev = r['group']
-        labels.append('%s · %s · %s' % (r['name'], FORM_SHORT[r['form']], r['metric'].upper()))
+        labels.append('%s · %s · %s'
+                      % (r['name'], FORM_SHORT.get(r['form'], r['form']), r['metric'].upper()))
         pos.append(i)
     fig, ax = plt.subplots(figsize=(WIDTH['f1_bootstrap_forest'], 4.1), layout='constrained')
     y = pos[::-1]
@@ -96,17 +134,18 @@ def f1_forest():
         ax.axhline(len(data) - g - 0.5, color='#cccccc', lw=.7)
     ax.set_yticks(y)
     ax.set_yticklabels(labels[::-1], fontsize=7.2)
-    ax.set_xlabel(r'$\Delta$ NDCG@5 / MRR@5 with 95% paired bootstrap interval')
+    ax.set_xlabel(r'$\Delta$ NDCG@5 / MRR@5, 95% paired bootstrap')
     # 轴界由数据决定：写死上限会把区间右端裁掉（评审 P1 次要问题）
     lo_all = [r['lo'] for r in data]
     hi_all = [r['hi'] for r in data]
     pad = 0.04 * (max(hi_all) - min(lo_all))
     ax.set_xlim(min(lo_all) - pad, max(hi_all) + pad)
     ax.set_title('Paired comparisons under the unified candidate space\n'
-                 '(2,000 resamples, seed 20260933;\n'
-                 'no correction for multiple comparisons)',
+                 '(2,000 resamples, seed 20260933; no correction for\n'
+                 'multiple comparisons — the ten rows of Table 4)',
                  fontsize=8.4, loc='left', color=INK)
-    return save(fig, 'f1_bootstrap_forest')
+    return save(fig, 'f1_bootstrap_forest', data=[
+        {k: r[k] for k in ('group', 'form', 'metric', 'delta', 'lo', 'hi')} for r in data])
 
 
 RULE_LABEL = [('v3_frozen', 'paper labels (v3_frozen)'),
@@ -155,7 +194,14 @@ def f2_gold_sensitivity():
                           label='RRF where the RRF-Dense interval crosses 0')]
     fig.legend(handles=handles, fontsize=7, ncol=4, loc='lower center',
                bbox_to_anchor=(.5, .015), frameon=False)
-    return save(fig, 'f2_gold_sensitivity')
+    return save(fig, 'f2_gold_sensitivity', data=[
+        {'rule': k, 'form': form,
+         'questionsWithGold': rules[k]['questionsWithGold'],
+         'bm25_ndcg@5': rules[k]['unified'][form]['agg']['bm25']['ndcg@5'],
+         'dense_ndcg@5': rules[k]['unified'][form]['agg']['dense']['ndcg@5'],
+         'rrf_ndcg@5': rules[k]['unified'][form]['agg']['rrf_k60']['ndcg@5'],
+         'ci_rrf_minus_dense_ndcg@5': rules[k]['unified'][form]['ci']['rrf_vs_dense']['ndcg@5']['ci']}
+        for k, _ in RULE_LABEL for form in ('template', 'bare')])
 
 
 def f5_coverage_vs_fusion():
@@ -194,7 +240,8 @@ def f5_coverage_vs_fusion():
     a2.set_ylim(0, 1.0)
     a2.set_title('B. fusion under fixed coverage\n(both channels on the same 1,696 entities)',
                  fontsize=8.2, color=INK)
-    return save(fig, 'f5_coverage_vs_fusion')
+    return save(fig, 'f5_coverage_vs_fusion', data=[
+        {'step': label.replace('\n', ' '), 'ndcg@5': value} for label, value, _ in steps])
 
 
 def f6_quota_ablation():
@@ -231,8 +278,8 @@ def f6_quota_ablation():
     fig.text(.095, .03,
              'Quota at the retrieval depth of the frozen evaluation (20) \u2261 quota off '
              '(186/186 lists identical).\n'
-             'Hit@1 is identical under both settings (0.6935); resampling is clustered by question.\n'
-             'Red marks an interval that crosses 0.',
+             'Hit@1 is identical under both settings (%.4f); resampling is clustered by question.\n'
+             'Red marks an interval that crosses 0.' % off['hit@1'],
              fontsize=6.3, color=MUTED, va='bottom')
     a1.set_title('A. Metric levels with the source quota off vs on\n'
                  '(conditional_93, both forms pooled, 186 pairs)',
@@ -259,7 +306,11 @@ def f6_quota_ablation():
     a2.set_xlabel(r'$\Delta$ (quota off $-$ quota on @5)', fontsize=8)
     a2.set_title('B. Paired bootstrap of the difference\n(2,000 resamples)',
                  fontsize=8.0, loc='left', color=INK)
-    return save(fig, 'f6_quota_ablation')
+    return save(fig, 'f6_quota_ablation', data={
+        'levels_off': {k: off[k] for k in ('hit@1', 'hit@5', 'mrr', 'ndcg@5')},
+        'levels_on': {k: on[k] for k in ('hit@1', 'hit@5', 'mrr', 'ndcg@5')},
+        'diff_off_minus_on@5': {k: {'delta': comp[k]['delta'], 'ci': comp[k]['ci']}
+                                for k in ('ndcg@5', 'mrr', 'hit@5')}})
 
 
 def main():
@@ -271,15 +322,20 @@ def main():
         return Path(path).resolve().relative_to(root).as_posix()
 
     qa_rel = rel(work / 'qa_100_human_v3.jsonl')
-    manifest = {'generated': datetime.now().isoformat(timespec='seconds'),
-                'figures': made,
+    # 没有时间戳：这个文件是 reproduce.py 逐字节比对的图件契约，
+    # 重跑必须一模一样。图画出去的数值都在这里，不必去读像素。
+    manifest = {'figures': made,
                 'sources': {'f1': rel(BENCH / 'paired_bootstrap.csv'),
                             'f2': rel(SENS),
                             'f5': rel(BENCH / 'results_overall.csv'),
                             'f6': '%s + %s/hybrid_raw_a20_{template,bare}.jsonl'
                                   % (qa_rel, qa_rel.rsplit('/', 1)[0])},
-                'note': 'all values read from the listed artefacts; oracle row excluded '
-                        '(its NDCG column in the archive is degenerate)'}
+                'note': 'all values read from the listed artefacts; oracle comparisons '
+                        'excluded (its NDCG column in the archive is degenerate). '
+                        'f1 plots the ten rows of Table 4: the eight per-formulation RRF '
+                        'comparisons plus the BM25 index-expansion rows, which coincide '
+                        'across formulations and are drawn once.',
+                'plotted': {name: PLOTTED[name] for name in made if name in PLOTTED}}
     (OUT / 'figures_manifest.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')
     print('figures:', ', '.join(made))
 

@@ -1,0 +1,45 @@
+unjudged-item sensitivity, unified space, conditional_93 (n=93), 2,000 resamples, seed 20260933
+
+control vs frozen archive: bit-exact on all 8 cells
+
+== control ==
+  rrf_k60 - bm25 template  ndcg@5   +0.1881 [+0.1383,+0.2398]
+  rrf_k60 - bm25 template  mrr      +0.0731 [+0.0312,+0.1210]
+  rrf_k60 - dense template  ndcg@5   +0.1308 [+0.0698,+0.1961]
+  rrf_k60 - dense template  mrr      +0.1115 [+0.0457,+0.1794]
+  rrf_k60 - bm25 bare      ndcg@5   +0.1681 [+0.1246,+0.2118]
+  rrf_k60 - bm25 bare      mrr      +0.0477 [+0.0172,+0.0833]
+  rrf_k60 - dense bare      ndcg@5   +0.0940 [+0.0363,+0.1571]
+  rrf_k60 - dense bare      mrr      +0.0991 [+0.0369,+0.1659]
+
+== condensed ==
+  rrf_k60 - bm25 template  ndcg@5   +0.1523 [+0.1032,+0.2049]
+  rrf_k60 - bm25 template  mrr      +0.0591 [+0.0188,+0.1075]
+  rrf_k60 - dense template  ndcg@5   +0.1372 [+0.0789,+0.1988]
+  rrf_k60 - dense template  mrr      +0.1120 [+0.0484,+0.1783]
+  rrf_k60 - bm25 bare      ndcg@5   +0.1397 [+0.0901,+0.1894]
+  rrf_k60 - bm25 bare      mrr      +0.0425 [-0.0011,+0.0909]   <- crosses or touches 0
+  rrf_k60 - dense bare      ndcg@5   +0.1078 [+0.0553,+0.1649]
+  rrf_k60 - dense bare      mrr      +0.1084 [+0.0529,+0.1690]
+
+== promoted@5 ==
+  rrf_k60 - bm25 template  ndcg@5   +0.1248 [+0.0733,+0.1801]
+  rrf_k60 - bm25 template  mrr      +0.0349 [+0.0000,+0.0780]   <- crosses or touches 0
+  rrf_k60 - dense template  ndcg@5   +0.1767 [+0.1155,+0.2396]
+  rrf_k60 - dense template  mrr      +0.1308 [+0.0654,+0.1998]
+  rrf_k60 - bm25 bare      ndcg@5   +0.1161 [+0.0700,+0.1624]
+  rrf_k60 - bm25 bare      mrr      +0.0188 [-0.0134,+0.0538]   <- crosses or touches 0
+  rrf_k60 - dense bare      ndcg@5   +0.1522 [+0.0940,+0.2129]
+  rrf_k60 - dense bare      mrr      +0.1278 [+0.0663,+0.1955]
+
+== promoted ==
+  rrf_k60 - bm25 template  ndcg@5   -0.2081 [-0.2793,-0.1339]
+  rrf_k60 - bm25 template  mrr      +0.0349 [+0.0000,+0.0780]   <- crosses or touches 0
+  rrf_k60 - dense template  ndcg@5   +0.0926 [+0.0613,+0.1237]
+  rrf_k60 - dense template  mrr      +0.1308 [+0.0654,+0.1998]
+  rrf_k60 - bm25 bare      ndcg@5   -0.2140 [-0.2819,-0.1449]
+  rrf_k60 - bm25 bare      mrr      +0.0188 [-0.0134,+0.0538]   <- crosses or touches 0
+  rrf_k60 - dense bare      ndcg@5   +0.0806 [+0.0508,+0.1115]
+  rrf_k60 - dense bare      mrr      +0.1278 [+0.0663,+0.1955]
+
+The manuscript quotes `condensed` and `promoted@5`. `promoted` is kept here to show why the window matters: scoring whole lists against a gold set that grows with the unjudged material a system returns rewards the systems that return less of it.

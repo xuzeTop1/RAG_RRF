@@ -2,9 +2,14 @@
 """Re-run every published stage and check it reproduces the checked-in artefacts.
 
 The frozen ranking and label files under `work/` are the inputs; everything under
-`results/`, `figures/` and `benchmark-results/<timestamp>-…/` is derived. Figures
-are compared as PNG bytes — the SVG/PDF writers stamp a creation date, so those
-two formats differ on every run by construction.
+`results/`, `figures/` and `benchmark-results/<timestamp>-…/` is derived.
+
+Figures are checked through `figures/figures_manifest.json`, which records the
+values each figure plots; the image bytes themselves are reported but not
+required to match, because the PNG/SVG/PDF encoders stamp the matplotlib
+version and resolve fonts through whatever the host has installed. Float
+accumulation in the pipeline goes through `numerics.csum`, so the numbers do not
+depend on the interpreter's own `sum()` behaviour (which changed in CPython 3.12).
 
 Usage:  python reproduce.py
 """
@@ -25,10 +30,16 @@ STAGES = [
     ('revision recompute (RQ2, exposure)', ['revision_recompute.py'],
      ['results/revision_recompute.json']),
     ('unified-space report (Tables 3-4)', ['fair_candidate_space.py', 'report'], None),
-    ('figures 2-5', ['make_figures.py'],
-     ['figures/f1_bootstrap_forest.png', 'figures/f2_gold_sensitivity.png',
-      'figures/f5_coverage_vs_fusion.png', 'figures/f6_quota_ablation.png']),
+    ('pooling coverage (Sec. 5.1 limits)', ['judged_coverage_check.py'],
+     ['results/judged_coverage.txt']),
+    ('unjudged-item sensitivity (Sec. 6.2)', ['unjudged_sensitivity.py'],
+     ['results/unjudged_sensitivity.txt']),
+    ('figures 2-5', ['make_figures.py'], ['figures/figures_manifest.json']),
 ]
+
+# Reported, never fatal: raster/vector bytes move with the plotting environment.
+INFORMATIVE = ['figures/f1_bootstrap_forest.png', 'figures/f2_gold_sensitivity.png',
+               'figures/f5_coverage_vs_fusion.png', 'figures/f6_quota_ablation.png']
 
 
 def run(command):
@@ -44,6 +55,9 @@ def main():
     if not (HERE / 'work' / 'qa_100_human_v3.jsonl').exists():
         raise SystemExit('work/ is missing: repopulate it with desensitize.py from the '
                          'private checkout, or unpack a published release')
+    print('interpreter: %s' % ' '.join(sys.version.split()[:2]))
+    images_before = {a: ((HERE / a).read_bytes() if (HERE / a).exists() else None)
+                     for a in INFORMATIVE}
     failures = []
     for label, command, artefacts in STAGES:
         marked = len(failures)
@@ -76,6 +90,14 @@ def main():
                 elif before[artefact] != path.read_bytes():
                     failures.append('%s: %s changed on rerun' % (label, artefact))
         print('%-36s %s' % (label, 'FAIL' if len(failures) > marked else 'ok'))
+
+    for artefact in INFORMATIVE:
+        before = images_before[artefact]
+        path = HERE / artefact
+        if before is not None and path.exists() and before != path.read_bytes():
+            print('note: %s bytes differ from the checked-in copy; the plotted values in '
+                  'figures/figures_manifest.json matched, and image bytes depend on the '
+                  'host matplotlib and fonts.' % artefact)
 
     if failures:
         print('\nFAIL:')

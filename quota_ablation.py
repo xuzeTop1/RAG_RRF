@@ -28,8 +28,12 @@ import io
 import json
 import math
 import random
+import sys
 from collections import defaultdict
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from numerics import csum  # noqa: E402
 
 K_RRF = 60          # hybrid.rs DEFAULT_K_RRF
 FLOOR = 2           # hybrid.rs PER_SOURCE_FLOOR
@@ -116,14 +120,14 @@ def metrics(ranking, gold):
         if k in gold:
             mrr = 1.0 / (i + 1)
             break
-    dcg = sum(1.0 / math.log2(i + 2) for i, k in enumerate(ranking[:5]) if k in gold)
-    idcg = sum(1.0 / math.log2(i + 2) for i in range(min(len(gold), 5)))
+    dcg = csum(1.0 / math.log2(i + 2) for i, k in enumerate(ranking[:5]) if k in gold)
+    idcg = csum(1.0 / math.log2(i + 2) for i in range(min(len(gold), 5)))
     return hit1, hit3, hit5, mrr, (dcg / idcg if idcg else 0.0)
 
 
 def agg(rows):
     n = len(rows)
-    return {k: sum(m[i] for _, m in rows) / n
+    return {k: csum(m[i] for _, m in rows) / n
             for i, k in enumerate(('hit@1', 'hit@3', 'hit@5', 'mrr', 'ndcg@5'))}
 
 
@@ -166,7 +170,7 @@ def boot(a, b, n_boot=N_BOOT, metrics=('ndcg@5', 'mrr')):
     for m in metrics:
         values = sorted(draws[m])
         out[m] = {'delta': observed[m] / n_pairs,               # 观测配对均值差 = 点估计
-                  'boot_mean': sum(values) / n_boot,           # 仅作重抽样中心，不对外报
+                  'boot_mean': csum(values) / n_boot,           # 仅作重抽样中心，不对外报
                   'ci': [values[int(.025 * n_boot)], values[int(.975 * n_boot) - 1]]}
     return out
 
