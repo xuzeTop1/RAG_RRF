@@ -5,9 +5,9 @@ Reproduction materials for an offline evaluation of hybrid retrieval in a local
 Reciprocal Rank Fusion with deterministic tie-breaking, and an anti-starvation
 per-source quota — compared over one and the same entity set.
 
-The manuscript is under review and is **not** part of this repository. What is
-published here is the frozen benchmark input, the code that turns it into every
-reported number, and the figures.
+The manuscript is maintained separately. This repository provides frozen
+rankings and labels, the code that recomputes the reported analyses from those
+inputs, and the figures.
 
 ---
 
@@ -60,13 +60,10 @@ rankings are frozen assets.
 pip install matplotlib
 ```
 
-The published numbers do **not** depend on the interpreter version. CPython 3.12
-changed the algorithm inside the built-in `sum()` for floats (compensated
-summation), which is enough to move a metric in its last binary digits; every
-float accumulation in this bundle goes through `numerics.csum`, one pure-Python
-compensated sum, so any 3.9+ interpreter yields the same bytes. Checked on
-3.11.15 (naive `sum()`) against 3.12.10 (compensated `sum()`): all four numeric
-stages, including the three frozen CSVs, regenerate identically.
+The numeric stages use `numerics.csum` for floating-point accumulation. This
+avoids the last-digit differences observed with the built-in `sum()` across
+CPython versions. On the two tested environments, 3.11.15 and 3.12.10, all four
+numeric stages regenerated identically, including the three frozen CSVs.
 
 ## Quick start
 
@@ -75,13 +72,11 @@ python reproduce.py        # re-run every stage, diff against the checked-in art
 python check_release.py    # assert no non-pseudonymised material slipped back in
 ```
 
-`reproduce.py` checks a figure by the values written into
-`figures/figures_manifest.json`, not by image bytes. The PNG and PDF are also
-byte-stable now (no date or build string is stamped), but the SVG embeds
-per-render object ids derived from memory addresses, so its bytes differ on every
-run by construction — and a raster difference would in any case follow the host's
-matplotlib build and installed fonts. A differing plotted value is a failure; a
-differing image is reported as a note.
+`reproduce.py` checks figures through the values in
+`figures/figures_manifest.json`. PNG and PDF bytes matched in the tested setup;
+SVG object ids can vary between renders, and raster bytes can depend on the
+host's matplotlib build and fonts. A plotted-value difference fails the check,
+while an image-byte difference is reported separately.
 
 Or stage by stage, in this order:
 
@@ -95,9 +90,9 @@ Or stage by stage, in this order:
 | 6 | `python unjudged_sensitivity.py` | `results/unjudged_sensitivity.txt` — the Section 6.2 re-scoring of unjudged entities (condensed, and counted relevant inside the Top-5 window) |
 | 7 | `python make_figures.py` | `figures/*` — every figure, read from the artefacts above |
 
-`python fair_candidate_space.py prepare` and `rank` are **not** runnable from this
-checkout: they rebuild the SQLite mirrors from the private knowledge base and drive
-the Rust harness. See [What is not reproducible here](#what-is-not-reproducible-here).
+`python fair_candidate_space.py prepare` and `rank` rebuild the SQLite mirrors
+from the private knowledge base and drive the Rust harness. They require the
+source corpus, which is outside this checkout. See [Reproduction scope](#reproduction-scope).
 
 ## Data and pseudonymisation
 
@@ -114,44 +109,41 @@ Two properties make the replay exact, and both are checked:
 * the evaluation mirror ids (`…evalmirror-kn-…`) are **folded back onto the entity
   they mirror before** rewriting, otherwise one entity would receive two ids.
 
-1,111 distinct entity ids appear in the published assets. Additionally stripped:
+1,111 distinct entity ids appear in the published assets. The release also removes
 the free-text `query` / `target_term` fields (set to `null`) and the reviewer-note
 wording in `ai_review_correction` / `ai_review_supplement` (replaced by
 `[redacted: corpus-derived text]`), the query text inside `multi_kappa_report.json`,
 and the pre-anonymisation mirror fingerprints. The reverse mapping is not
-published and cannot be recovered from these files.
+included in the release.
 
-Reviewers are recorded under the role labels `评审一…评审六` (annotator 1…6) with no
-personal identifier; two are human raters, three are model raters, and one was
-dropped for being a near-duplicate of another. The two human raters both hold a
-bachelor's degree in computing, and one of them is an author of the manuscript — the
-manuscript says so in Sections 5.2 and 7.3, and the bundle repeats it here so the two
-artefacts cannot be read as claiming different things. The `annotator` field keeps the
-role label because `gold_annotation_sensitivity.py` keys on it rather than on the file
-name.
+Reviewers are recorded under the role labels `评审一…评审六` (annotator 1…6):
+two are human raters, three are model raters, and one pilot model rater was
+excluded under the recorded redundancy rule. Both human raters hold a bachelor's
+degree in computing; H1 (`评审一`) is an author. Across the 847 shared items, H1
+marked 378 relevant and H2 (`评审二`) marked 161; their Cohen's κ is 0.4207 and
+raw agreement is 72.96%. The `annotator` field retains the role label used by
+`gold_annotation_sensitivity.py`.
 
 ### The five `ai_review_*` records
 
 Five base questions — q013, q018, q055, q072, q077 — carry an `ai_review_supplement`
-(adds gold items) or `ai_review_correction` (replaces them) field. The name is kept
-from the private annotation archive rather than prettified, because it records what
-happened: after the five raters' exports were frozen, the authors ran one further
-review pass over the borderline questions with an LLM reviewer drafting the
-assessment, and confirmed each change themselves. These adjustments are not votes and
-sit outside the equal-weight majority rule, and they do move gold: on q055 three items
+(adds gold items) or `ai_review_correction` (replaces them) field. These names
+follow the annotation archive. After the five raters' exports were frozen, an
+LLM reviewer drafted a further assessment of these borderline questions and
+the authors confirmed each change. These adjustments are separate from the
+equal-weight majority votes: on q055 three items
 the majority had marked relevant were removed, and on q018, q072 and q077 one item each
 was added that no rater had been shown, because it fell outside the pooling depth
-(q013's entry adds nothing). So `v3_frozen`, the label set the manuscript reports on,
-differs from the pure ≥3/5 majority on four of the five.
+(q013's entry adds nothing). The reported `v3_frozen` labels therefore differ
+from the pure ≥3/5 majority on four of the five questions.
 
-Two consequences are stated in the manuscript rather than smoothed over: Section 6.6
-repeats the headline comparison under the pure five-rater majority (NDCG@5 0.8867
-against 0.8916), and the AI-use statement says the tools took no part in the **blind
-five-rater annotation**, which is deliberately narrower than "no AI was involved in
-labelling". The note text is corpus-derived and redacted here; the field structure, the
-affected qids and the added/removed entity ids are not.
+Section 6.6 also reports the headline comparison under the five-rater majority
+without these review changes (NDCG@5 0.8867 versus 0.8916). The manuscript's
+AI-use statement distinguishes the blind five-rater annotation from the later
+review. Corpus-derived note text is redacted; the affected qids and changed
+entity ids remain available.
 
-### Which run built the annotation pool
+### Pool formation and frozen evaluation runs
 
 `work/qa_100_human_v3.jsonl` records the pool as annotated: 847 query–entity pairs,
 per question the keys of `gold_votes`. The manuscript describes pooling as the union of
@@ -162,10 +154,9 @@ of their Top-5 slots reproduces the per-question pool **exactly for 44 of the 93
 questions**: 78 pairs that carry votes are outside that union, and 4 items inside it were
 never judged. Run `python judged_coverage_check.py` for the per-question detail.
 
-This is a limitation of the released ordering, not of the labels: every reported metric
-uses the votes as annotated, so nothing here changes a number in the manuscript. It does
-mean an unjudged-item analysis cannot be derived from these files alone, and that the
-pool cannot be re-cut from the frozen runs.
+The pool-forming run preceded the released evaluation runs. The archived labels
+and frozen rankings remain the inputs to every reported metric, while the
+earlier pool-forming order is unavailable for reconstructing the original pool.
 
 `judged_coverage_check.py` writes the detail to `results/judged_coverage.txt`, including
 how much of each returned Top-5 actually carries a vote (micro average over
@@ -197,27 +188,22 @@ intervals. A third reading — promotion over each system's whole list — is pr
 caution: it inflates the ideal DCG of whichever system returns more unjudged material and
 reverses the sign of RRF minus BM25 NDCG@5, which is why the manuscript names the window.
 
-### Known disclosure
+### Reference code and fixtures
 
-`src-tauri/src/rag/hybrid.rs` is published **byte-for-byte as measured**, including
-its unit tests, whose fixtures are short illustrative Chinese phrases (for example
-a string about the intuitive meaning of a limit). Those are test inputs for the
-FTS5 trigram path, not corpus passages, but they are Chinese educational wording and
-are therefore called out rather than silently edited: altering them would mean
-shipping reference code that was never compiled.
+`src-tauri/src/rag/hybrid.rs` is published byte-for-byte as measured. Its unit
+tests include short illustrative Chinese phrases used to exercise the FTS5
+trigram path; they are test fixtures rather than corpus passages.
 
-## Latency is not re-derivable from this package
+## Runtime records
 
-The manuscript reports retrieval and fusion averaging **12.662 ms** (sample sd 1.114,
-P95 13.801, max 19.324) with the query vector preloaded. That is a summary of 100 timed
-runs of the native Rust path in the desktop application; only the four summary values
-were recorded, the individual timings were not archived, and the record does not say
-which of the two evaluation copies produced them. Treat 12.662 ms as a stated
-measurement, not a quantity to reproduce.
+The manuscript reports a **12.662 ms** mean for retrieval and fusion (sample sd
+1.114 ms, P95 13.801 ms, maximum 19.324 ms) from 100 timed runs of the native
+Rust path with the query vector preloaded. The archived record contains these
+four summaries, but not the individual runs or the evaluation-copy identifier.
 
-What this package *does* let you time is the per-query `elapsedMicros` field in the
-frozen ranking files — one repetition per question and configuration, so a different
-measurement. Averaged over the 93 questions, the `hybrid` configuration gives:
+The frozen ranking files additionally contain one `elapsedMicros` observation
+per question and configuration. These are a separate measurement. Averaged over
+the 93 questions, the `hybrid` configuration gives:
 
 | Run set | mean | sd | P95 | max |
 |---|---|---|---|---|
@@ -226,12 +212,35 @@ measurement. Averaged over the 93 questions, the `hybrid` configuration gives:
 | unified space, templated (`fair_rank_unified_template`) | 16.768 ms | 2.705 | 20.819 | 28.224 |
 | unified space, concept-only (`fair_rank_unified_bare`) | 16.112 ms | 2.628 | 19.889 | 30.707 |
 
-The deployment path is cheaper because only 159 private chunks carry the trigram index
-there, while the unified space ranks 1,696 entities on both channels. The query-embedding
-figures (174.3 ms templated, 41.0 ms concept-only) are likewise batch summaries over 100
-queries with no per-sample variance retained.
+From the repository root, the following calculation reproduces the four means
+in the table from the released `elapsedMicros` observations:
 
-## Headline numbers reproduced from these assets
+```python
+import json
+from pathlib import Path
+from statistics import mean
+
+work = Path("work")
+gold = {
+    row["qid"]
+    for row in map(json.loads, (work / "qa_100_human_v3.jsonl").open(encoding="utf-8"))
+    if row["gold_ids"]
+}
+for stem in ("hybrid_raw_a20_template", "hybrid_raw_a20_bare",
+             "fair_rank_unified_template", "fair_rank_unified_bare"):
+    rows = map(json.loads, (work / f"{stem}.jsonl").open(encoding="utf-8"))
+    values_ms = [row["elapsedMicros"][0] / 1000 for row in rows
+                 if row["config"] == "hybrid" and row["qid"] in gold]
+    print(stem, len(values_ms), f"{mean(values_ms):.3f} ms")
+```
+
+The deployment path indexes 159 private chunks in FTS5, while the unified space
+indexes all 1,696 entities in both channels. The query-embedding figures
+(174.3 ms templated, 41.0 ms concept-only) are separate batch summaries over
+100 queries. The released `elapsedMicros` observations support inspection of
+the per-query retrieval records; they do not reconstruct the 100-run summary.
+
+## Results regenerated from frozen inputs
 
 All over `conditional_93` — the 93 base questions with at least one relevant entity
 in the pooled candidate set, 186 query instances with both formulations pooled.
@@ -239,6 +248,7 @@ in the pooled candidate set, 186 query instances with both formulations pooled.
 | Quantity | Value | Artefact |
 |---|---|---|
 | RRF (k=60, no quota) NDCG@5 / MRR@5 | 0.8916 / 0.9330 | `results/revision_recompute.json` → `levels_both` |
+| Tie-key comparison, pooled NDCG@5 (`rrf_k60_unified` vs `rrf_k60_unified_prefixkey`) | 0.8915764 vs 0.8908105; Δ = 0.0007659 | `benchmark-results/20260916-221246-rag-fair-candidate-space/results_overall.csv` |
 | ΔNDCG@5 vs Dense | +0.1124, 95% CI [+0.0555, +0.1756] | ditto → `both` |
 | ΔNDCG@5 vs BM25 | +0.1781, 95% CI [+0.1350, +0.2232] | ditto |
 | Per-metric max(BM25, Dense) oracle NDCG@5 | 0.8993 | ditto → `levels_both.oracle` |
@@ -265,32 +275,23 @@ comparisons.
 | `quota_ablation.py` | 20260916 | `BOOT_SEED = 20260916 + 13` = 20260929 |
 | `gold_sensitivity_ext.py` | reuses the `report` stream | 20260933 |
 
-## What is not reproducible here
+## Reproduction scope
 
-Stated plainly, because "reproduces" should mean something:
+`reproduce.py` regenerates the reported aggregate metrics and figures from the
+released rankings and labels in `work/`. The source corpus and index files are
+outside this release, so `prepare` and `rank` require the private project data.
+Annotation was collected once; the released vote files let readers inspect and
+reanalyze those judgments. Redaction of `query` and `target_term` also limits
+external inspection of the question-to-corpus wording.
 
-* **Retrieval itself.** The corpus (built-in educational dictionary entries plus a
-  private lecture/exam document set) is not published, so the BM25 and dense
-  channels cannot be re-run and the ranking files here are the frozen inputs, not
-  re-derivable outputs. `prepare` and `rank` will fail on a public checkout by
-  design.
-* **Annotation.** The 847 pooled query–entity judgements were collected once
-  through a blind annotation page; re-running the pipeline re-uses those labels, it
-  does not recreate them.
-* **The oracle row in `results_overall.csv`.** `oracle_best_single_channel` compares
-  only the first hit position and assigns NDCG@5 = 1 to any hit, which is not a
-  valid upper bound. Stage 4 recomputes the per-question, per-metric
-  `max(BM25, Dense)` bound instead, and that is the number worth quoting.
-* **Corpus-derived wording.** Because `query` and `target_term` are redacted, the
-  alignment between a question and its intended dictionary entry is not externally
-  checkable from this bundle, only the labels and rankings.
-
-`reproduce.py` asserts the stronger claim that *is* supported: given `work/`, each
-stage regenerates the checked-in artefacts unchanged.
+The archived `oracle_best_single_channel` row in `results_overall.csv` is based
+on first-hit position and assigns NDCG@5 = 1 to any hit. For the per-query,
+per-metric `max(BM25, Dense)` reference used in the manuscript, see
+`results/revision_recompute.json`.
 
 ## Licence
 
 MIT, see [LICENSE](LICENSE). It covers the pipeline scripts, the Rust reference
 sources and the pseudonymised benchmark assets in this repository. The underlying
 corpus is not published and is not licensed by this file; neither is the
-manuscript, which is under review and lives elsewhere.
+manuscript, which is maintained separately.
