@@ -11,6 +11,25 @@ inputs, and the figures.
 
 ---
 
+## Publication
+
+- **Paper**: *Lightweight Embedded Hybrid Retrieval for Local LLMs: Unified
+  Candidate Space and Deployment Trade-offs*
+- **Venue**: MLEIL 2026 — International Conference on Machine Learning, Embodied
+  Intelligence and Large Models
+- **Paper ID**: MLEIL-2026-000070
+- **Status**: accepted; to appear in the conference proceedings, which the
+  organisers submit for EI indexation
+- **Authors**: Xize Han, Xin Xie (corresponding author)
+- **Affiliation**: School of Computer Science and Engineering, Hunan University
+  of Information Technology, Changsha, China
+- **Student author**: Xize Han — Software Engineering, B.Sc.
+
+The acceptance letter is committee correspondence addressed to the authors and is
+not redistributed here; the fields above are transcribed from it.
+
+---
+
 ## Why a "unified candidate space"
 
 In the deployed configuration only the user's private chunks carry a BM25 index;
@@ -83,12 +102,13 @@ Or stage by stage, in this order:
 | # | Command | Produces |
 |---|---------|----------|
 | 1 | `python fair_candidate_space.py report` | `benchmark-results/<timestamp>-rag-fair-candidate-space/` — Table 3 aggregates, Table 4 paired bootstrap, per-query metrics |
-| 2 | `python quota_ablation.py` | `results/quota_ablation.txt` — the Section 6.1 quota on/off ablation |
-| 3 | `python gold_sensitivity_ext.py` | `results/gold_sensitivity_ext.{json,txt}` — the Section 6.6 gold-label sensitivity |
+| 2 | `python quota_ablation.py` | `results/quota_ablation.txt` — the Section VI-A quota on/off ablation |
+| 3 | `python gold_sensitivity_ext.py` | `results/gold_sensitivity_ext.{json,txt}` — the Section VI-F gold-label sensitivity |
 | 4 | `python revision_recompute.py` | `results/revision_recompute.json` — pooled-formulation intervals, per-metric oracle upper bound, source exposure |
 | 5 | `python judged_coverage_check.py` | `results/judged_coverage.txt` — how much of each Top-5 was judged, and how far the frozen runs rebuild the pool |
-| 6 | `python unjudged_sensitivity.py` | `results/unjudged_sensitivity.txt` — the Section 6.2 re-scoring of unjudged entities (condensed, and counted relevant inside the Top-5 window) |
+| 6 | `python unjudged_sensitivity.py` | `results/unjudged_sensitivity.txt` — the Section VI-F re-scoring of unjudged entities (condensed, and counted relevant inside the Top-5 window) |
 | 7 | `python make_figures.py` | `figures/*` — every figure, read from the artefacts above |
+| 8 | `python k_sweep.py` | `results/k_sweep.json` — the Section VI-B re-fusion at k = 1/10/20/40/60, controls first |
 
 `python fair_candidate_space.py prepare` and `rank` rebuild the SQLite mirrors
 from the private knowledge base and drive the Rust harness. They require the
@@ -137,10 +157,10 @@ was added that no rater had been shown, because it fell outside the pooling dept
 (q013's entry adds nothing). The reported `v3_frozen` labels therefore differ
 from the pure ≥3/5 majority on four of the five questions.
 
-Section 6.6 also reports the headline comparison under the five-rater majority
-without these review changes (NDCG@5 0.8867 versus 0.8916). The manuscript's
-AI-use statement distinguishes the blind five-rater annotation from the later
-review. Corpus-derived note text is redacted; the affected qids and changed
+Section VI-F of the manuscript also reports the headline comparison under the five-rater majority
+without these review changes (NDCG@5 0.8867 versus 0.8916). The manuscript's annotation-transparency section
+(VII-C) keeps the same distinction: the blind five-rater panel and the later
+review are separate records in the released data. Corpus-derived note text is redacted; the affected qids and changed
 entity ids remain available.
 
 ### Pool formation and frozen evaluation runs
@@ -171,22 +191,25 @@ channel lists, as in Tables 3–4):
 | Interleave, unified | 0.9269 | 0.9247 |
 | BM25, unified index | 0.7810 | 0.7810 |
 
-BM25 on the unified index is the pooling limit rather than a ranking result: it returns
-fewer than five hits for 74 of the 93 questions, and under a fixed five-slot denominator
-its coverage is 0.3527.
+BM25 on the unified index returns fewer than five hits for 74 of the 93 questions, so with
+a fixed five-slot denominator its judged coverage is 0.3527. The depth effect and the
+ranking effect are reported side by side for exactly this reason: the unified space holds
+both channels to the same 1,696 entities, which is what makes the comparison of ranking
+mechanisms interpretable.
 
 ### Re-scoring the unjudged entities
 
-`unjudged_sensitivity.py` backs the Section 6.2 sentence. It first re-derives the eight
+`unjudged_sensitivity.py` backs the re-scoring sentence in Section VI-F. It first re-derives the eight
 published control cells bit-for-bit from `paired_bootstrap.csv` and stops if they do not
 match, so the three readings cannot drift apart silently. `condensed` drops unjudged
 entities from the returned list; `promoted@5` counts unjudged entities inside the Top-5
 window of any compared strategy as relevant, with one relevance set per question so all
 systems face the same gold. Both keep every NDCG@5 interval and every RRF–Dense MRR@5
 interval above zero, while RRF–BM25 MRR@5 crosses or touches zero in three of its four
-intervals. A third reading — promotion over each system's whole list — is printed as a
-caution: it inflates the ideal DCG of whichever system returns more unjudged material and
-reverses the sign of RRF minus BM25 NDCG@5, which is why the manuscript names the window.
+intervals. A third reading — promotion over each system's whole list — is printed for completeness but
+is not a valid comparison: it inflates the ideal DCG of whichever system returns more
+unjudged material, so the metric no longer measures the same thing for both systems. That
+is why the manuscript fixes the Top-5 window.
 
 ### Reference code and fixtures
 
