@@ -23,7 +23,6 @@ inputs, and the figures.
 - **Authors**: Xize Han, Xin Xie (corresponding author)
 - **Affiliation**: School of Computer Science and Engineering, Hunan University
   of Information Technology, Changsha, China
-- **Student author**: Xize Han — Software Engineering, B.Sc.
 
 The acceptance letter is committee correspondence addressed to the authors and is
 not redistributed here; the fields above are transcribed from it.
